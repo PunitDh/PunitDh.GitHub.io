@@ -1,32 +1,9 @@
 <!DOCTYPE html>
-<HTML>
+<HTML lang="en">
 <HEAD>
 	<META name ="viewport" content="width=device-width, initial-scale=1.0" />
 	<META charset=UTF-8>
-<TITLE>Skills Score</TITLE></HEAD>
-<BODY>
-<form id="skillscore" name="skills"><BR><BR><BR><BR>
-	<font face="sans-serif">
-	<center>
-	<label for="s">
-	<H3>Please select your skills:</H3><H4>(Press Ctrl + Click to select multiple skills)</H4><BR></label>
-	<select class="skillscore" multiple id="s" name="s" style="height:140px;">
-		<option class="s" value=1>Python</option>
-		<option class="s" value=2>Ruby</option>
-		<option class="s" value=4>Bash</option>
-		<option class="s" value=8>Git</option>
-		<option class="s" value=16>HTML</option>
-		<option class="s" value=32>TDD</option>
-		<option class="s" value=64>CSS</option>
-		<option class="s" value=128>JavaScript</option>
-	</select>
-	<BR><BR>
-	<input type="button" class="skillscore" value="Find My Skill Scores!" onClick="this.form.skscore.value = CodingSkillScore(this.form.s);"><BR>
-	<input type="text" class="skillscore" id="skscore" name="skscore"><BR><BR>
-	<input type="button" class="skillscore" value="Recommend Me Skills To Learn!" onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);" ><BR>
-	<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
-	</center></font>
-</form>
+<TITLE>Skills Score</TITLE>
 
 <style>
 	/* Tags */
@@ -46,9 +23,33 @@
 	{
 		H3 { color: blue; }
 	}
+
+	* {	font-family: sans-serif; text-align: center;	}
 </style>
 
-<script language>
+</HEAD>
+<BODY>
+<form id="skillscore" name="skills"><BR><BR><BR><BR>
+	
+	<H3><label for="s">Please select your skills:</label></H3><H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
+	<select class="skillscore" multiple id="s" name="s" style="height:140px;">
+		<option class="s" value=1>Python</option>
+		<option class="s" value=2>Ruby</option>
+		<option class="s" value=4>Bash</option>
+		<option class="s" value=8>Git</option>
+		<option class="s" value=16>HTML</option>
+		<option class="s" value=32>TDD</option>
+		<option class="s" value=64>CSS</option>
+		<option class="s" value=128>JavaScript</option>
+	</select>
+	<BR><BR>
+	<input type="button" class="skillscore" value="Find My Skill Scores!" onClick="this.form.skscore.value = CodingSkillScore(this.form.s);"><BR>
+	<input type="text" class="skillscore" id="skscore" name="skscore"><BR><BR>
+	<input type="button" class="skillscore" value="Recommend Me Skills To Learn!" onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);" ><BR>
+	<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
+</form>
+
+<script>
 function CodingSkillScore(skill)
 {
 	var skill_score = 0;

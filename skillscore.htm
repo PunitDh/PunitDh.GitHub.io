@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META name ="viewport" content="width=device-width, initial-scale=1.0" />
+	<META charset=UTF-8>
+<TITLE>Skills Score</TITLE></HEAD>
+<BODY>
+<form id="skillscore" name="skills"><BR><BR><BR><BR>
+	<font face="sans-serif">
+	<center>
+	<label for="s">
+	<H3>Please select your skills:</H3><BR></label>
+	<select class="skillscore" multiple id="s" name="s" style="height:140px;">
+		<option class="s" value=1>Python</option>
+		<option class="s" value=2>Ruby</option>
+		<option class="s" value=4>Bash</option>
+		<option class="s" value=8>Git</option>
+		<option class="s" value=16>HTML</option>
+		<option class="s" value=32>TDD</option>
+		<option class="s" value=64>CSS</option>
+		<option class="s" value=128>JavaScript</option>
+	</select>
+	<BR><BR>
+	<input type="button" class="skillscore" value="Find My Skill Scores!" onClick="this.form.skscore.value = CodingSkillScore(this.form.s);"><BR>
+	<input type="text" class="skillscore" id="skscore" name="skscore"><BR><BR>
+	<input type="button" class="skillscore" value="Recommend Me Skills To Learn!" onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);" ><BR>
+	<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
+	</center></font>
+</form>
+
+<style>
+	/* Tags */
+	H3			{ color: red; }
+	textarea 	{ color: blue;	resize: none; }
+	
+	/* Classes */
+	.s { color: teal; }
+	.skillscore	{ width: 30%; }
+
+	/* IDs */
+	#skscore { color: brown; }
+
+	/* Media Breakpoints */
+	@media screen and (max-width: 600px)
+	{
+		H3 { color: blue; }
+	}
+</style>
+
+<script language>
+function CodingSkillScore(skill)
+{
+	var skill_score = 0;
+	for (i = 0; i < skill.length; i++)
+	{
+		if (skill[i].selected)	skill_score += parseInt(skill[i].value);
+	}
+	return skill_score;
+}
+
+function CodingSkillRecommend(skill)
+{
+	var skills_to_learn_init	= "You should learn these following skills:\n";
+	var skills_to_learn			= skills_to_learn_init;
+	var skills_to_learn_score	= 0;
+	var final_score				= 0;
+
+	for (var i = 0; i < skill.length; i++)
+	{	
+		if (!skill[i].selected)
+		{
+			skills_to_learn += skill[i].innerHTML;
+			skills_to_learn += (i < skill.length-1) ? ", " : ".";
+		}
+	}
+
+	if (skills_to_learn == skills_to_learn_init) skills_to_learn += "<none>";
+
+	skills_to_learn += "\n\nIt will boost your Skills Score by:\n"
+	
+	for (var i = 0; i < skill.length; i++)
+	{
+		if (!skill[i].selected)	skills_to_learn_score += parseInt(skill[i].value);
+	}
+	
+	if (skills_to_learn_score > 0)
+	{
+		skills_to_learn += skills_to_learn_score;
+		skills_to_learn += "\n\nYour final score will be:\n"
+	}
+	else 
+	{
+		skills_to_learn += "<none>";
+		skills_to_learn += "\n\nYour final score will is:\n"
+	}
+
+	final_score = parseInt(skills_to_learn_score) + CodingSkillScore(skill);
+
+	skills_to_learn += final_score;
+	return skills_to_learn;
+}
+</script>
+
+</BODY>
+</HTML>

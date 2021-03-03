@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Scripts</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/code.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" />
 </head>
@@ -33,23 +34,25 @@
 
             <p class="taglines">﹀ See my work below ﹀</p>
         </section>    
-
+        
     <code>
-        /// @desc
-        function array_find(_arr, _val)
-        {
-            var _ind = -1;
-            var _array = _arr;
-            for (var i = 0; i < array_length(_array); i++)
-            {
-                if (_array[i] == _val)
-                {
-                    _ind = i;
-                    break;
-                }
-            }
-            return _ind;
-        }
+        <pre><code class="lang-javascript"><span class="hljs-comment">/// @desc</span>
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">array_find</span><span class="hljs-params"><span class="hljs-operations">(</span>_arr<span class="hljs-operations">,</span> _val<span class="hljs-operations">)</span></span>
+            </span><span class="hljs-operations">{</span>
+                <span class="hljs-keyword">var</span> _ind <span class="hljs-operations">=</span> <span class="hljs-number">-1</span><span class="hljs-operations">;</span>
+                <span class="hljs-keyword">var</span> _array <span class="hljs-operations">=</span> _arr<span class="hljs-operations"></span><span class="hljs-operations">;</span>
+                <span class="hljs-keyword">for</span> <span class="hljs-operations">(</span><span class="hljs-keyword">var</span> i <span class="hljs-operations">=</span> <span class="hljs-number">0</span>; i <span class="hljs-operations">&lt;</span> _array<span class="hljs-operations">.</span>length<span class="hljs-operations">;</span> i<span class="hljs-operations">++)</span>
+                <span class="hljs-operations">{</span>
+                    <span class="hljs-keyword">if</span> <span class="hljs-operations">(</span>_array<span class="hljs-operations">[</span>i<span class="hljs-operations">]</span> <span class="hljs-operations">==</span> _val<span class="hljs-operations">)</span>
+                    <span class="hljs-operations">{</span>
+                        _ind <span class="hljs-operations">=</span> i<span class="hljs-operations">;</span>
+                        <span class="hljs-keyword">break</span><span class="hljs-operations">;</span>
+                    <span class="hljs-operations">}</span>
+                <span class="hljs-operations">}</span>
+                <span class="hljs-keyword">return</span> _ind<span class="hljs-operations">;</span>
+            <span class="hljs-operations">}</span>
+    </code></pre>
+    
         </code>
     
 </body>

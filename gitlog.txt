@@ -1,23 +1,16 @@
-4c04260 Create only one CSS file for website, add workbook MD file and Wireframe to portfolio
-53bffb6 Rename files to css/index.css
-dd08053 Add absolute and relative positioning to elements
-eafc530 Add media breakpoints for different size screens
-03adb07 Add flexbox functionality, further CSS
-a947432 Validate skillscore.htm on w3.org
-e908fe9 Update skillscore.htm
-6390d57 Add skillscore.htm to folder
-d8421c1 Add links
-8b87df2 Update resume
-d34feda Delete resume.html
-c118a44 Add tags to index.html
-190963a Merging
-d99cb74 Resume 2 added
-2e6932b Resume branch
-854cfc9 Add some text to index.html
-227b891 Add resume.html
-e642d55 Add html to index.html
-d0dbb67 Add Hello World
-4b77139 Create initial projectcommit 052980f41c6e815e3a67f33bd37e74c454f175bf
+commit b984ccb26297f9db6cc05b31bc2b119af77100ce
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 01:02:05 2021 +1100
+
+    Add menu functionality and responsive design
+
+commit 40151ac4e70bf1ec8ed589744c8b3a434d6e45da
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Wed Mar 3 23:02:12 2021 +1100
+
+    Add nav links to homepage, add CSS properties
+
+commit 052980f41c6e815e3a67f33bd37e74c454f175bf
 Author: root <root@Punit-BeastPC.localdomain>
 Date:   Wed Mar 3 22:39:55 2021 +1100
 

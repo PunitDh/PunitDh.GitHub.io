@@ -4,29 +4,7 @@
 	<META name ="viewport" content="width=device-width, initial-scale=1.0" />
 	<META charset=UTF-8>
 <TITLE>Skills Score</TITLE>
-
-<style>
-	/* Tags */
-	H3, H4			{ color: red; }
-	H4		{ font-size: 0.8em; }
-	textarea 	{ color: blue;	resize: none; }
-	
-	/* Classes */
-	.s { color: teal; }
-	.skillscore	{ width: 30%; }
-
-	/* IDs */
-	#skscore { color: brown; }
-
-	/* Media Breakpoints */
-	@media screen and (max-width: 600px)
-	{
-		H3 { color: blue; }
-	}
-
-	* {	font-family: sans-serif; text-align: center;	}
-</style>
-
+<link rel="stylesheet" href="css/index.css">
 </HEAD>
 <BODY>
 <form id="skillscore" name="skills"><BR><BR><BR><BR>
@@ -48,6 +26,19 @@
 	<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
 </form>
 
+<footer>Copyright &copy; 2021
+
+	<BR />
+	<BR />
+	Check out my other pages
+<P>
+	<a href="index.html">Index.html</a>
+</P>
+<P>
+	<a href="resume.html">Resume.html</a>
+</P>
+</footer>
+
 <script>
 function CodingSkillScore(skill)
 {
@@ -61,7 +52,7 @@ function CodingSkillScore(skill)
 
 function CodingSkillRecommend(skill)
 {
-	var skills_to_learn_init	= "You should learn these following skills:\n";
+	var skills_to_learn_init	= "You should learn the following skills:\n";
 	var skills_to_learn			= skills_to_learn_init;
 	var skills_to_learn_score	= 0;
 	var final_score				= 0;

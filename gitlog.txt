@@ -17,4 +17,129 @@ d99cb74 Resume 2 added
 227b891 Add resume.html
 e642d55 Add html to index.html
 d0dbb67 Add Hello World
-4b77139 Create initial project
+4b77139 Create initial projectcommit 052980f41c6e815e3a67f33bd37e74c454f175bf
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Wed Mar 3 22:39:55 2021 +1100
+
+    Redo homepage completely, add Bitmoji images, responsive CSS layouts, extra pages
+
+commit 4c0426009c5e8fd1150b4a1c422079ede6ebc95d
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 14:28:30 2021 +1100
+
+    Create only one CSS file for website, add workbook MD file and Wireframe to portfolio
+
+commit 53bffb662784a00a66f7dce26d926044bc65a112
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 12:13:36 2021 +1100
+
+    Rename files to css/index.css
+
+commit dd080534d2f681edd493dd37624e0ddac29faae7
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 12:06:40 2021 +1100
+
+    Add absolute and relative positioning to elements
+
+commit eafc53098eb836d7697c68b753798bddc2f9c352
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 11:48:34 2021 +1100
+
+    Add media breakpoints for different size screens
+
+commit 03adb077efdcb6141c9a9915115bd86311d9c1eb
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 11:32:29 2021 +1100
+
+    Add flexbox functionality, further CSS
+
+commit a9474328a946d762240b84476d910c01ad1d3bb6
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 09:31:44 2021 +1100
+
+    Validate skillscore.htm on w3.org
+
+commit e908fe90549548a9db18f3eaca0a4a147a285ced
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 09:16:37 2021 +1100
+
+    Update skillscore.htm
+
+commit 6390d57c7b18cf5ec93058e27c7d9b47b2e02520
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 3 09:07:15 2021 +1100
+
+    Add skillscore.htm to folder
+
+commit d8421c11f5c29f37a73644ac779c7ecf4baaf648
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 2 10:10:56 2021 +1100
+
+    Add links
+
+commit 8b87df2d3d5d9769cdb21529047ab4d5897895ef
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 2 10:01:36 2021 +1100
+
+    Update resume
+
+commit d34feda0acff9b1ef6f5dd49bd3841ac74560d5c
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 1 10:33:01 2021 +1100
+
+    Delete resume.html
+
+commit c118a4483952f6c6a90fefb0334d2ebe9a21d66f
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 1 10:30:46 2021 +1100
+
+    Add tags to index.html
+
+commit 190963a3d0f5ef888bf9f5249d617df806a85e53
+Merge: 2e6932b d99cb74
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 12:44:04 2021 +1100
+
+    Merging
+
+commit d99cb74ff586a40f1ae2bfd63a5cecd55532499c
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 12:10:35 2021 +1100
+
+    Resume 2 added
+
+commit 2e6932b060035700e60f553d21410c267e611233
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 12:09:14 2021 +1100
+
+    Resume branch
+
+commit 854cfc93c98edb7b3d64adfd1898fa8fd1275406
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 12:00:05 2021 +1100
+
+    Add some text to index.html
+
+commit 227b89197803b566015fb7eb3b256f38cd5950ba
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 11:29:51 2021 +1100
+
+    Add resume.html
+
+commit e642d55d94b604d6e061f250f4e78d37f1af30fc
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 11:12:42 2021 +1100
+
+    Add html to index.html
+
+commit d0dbb67f948427c2de45c8f409c6dc85b8bf485e
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 10:19:58 2021 +1100
+
+    Add Hello World
+
+commit 4b77139dc607f4a3ad3eecae3993c7c51d850fff
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Feb 24 10:13:42 2021 +1100
+
+    Create initial project

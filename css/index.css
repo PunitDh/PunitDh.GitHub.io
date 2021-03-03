@@ -1,109 +1,211 @@
 /* Universal */
-* {
-    margin: 0;
+*
+{
+    margin: 0px;
     box-sizing: border-box;
+    color:#545464;
+    padding: 0px;
 }
 
-/* Tags */
-body {
+/* HTML Tags */
+a:hover     { color:crimson; }
+
+body
+{
     font-family: sans-serif;
-    font-size: 12px;
-    border: 12px solid yellow;
+    font-size: 12pt;
     position: relative;
+    background:rgb(235, 235, 235);
 }
 
-section {
-    margin: 0 1em;
-    border: 12px solid red;
-    padding: 0.25em;
-    margin: 0.75em;
-}
-
-section + section {
-    border: 12px solid green;
-}
-
-button {
+/* button
+{
     background-color: crimson;
     border-color: crimson;
     color: white;
 }
 
-button:hover {
+button:hover
+{
     background-color: brown;
     color: wheat;
-}
+} */
 
-h1 {
-    font-size: 3em;
+h1
+{
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
     position: relative;
+    margin: 1em;
+    display: inline-block;
 }
 
-h1 > span {
+h1 > span
+{
     position: absolute;
     top: 0;
     left:8em;
 }
 
-footer {
+html{
+    scroll-behavior: smooth;
+}
+
+footer
+{
     margin: 1em 0;
     text-align: center;
 }
 
-/* footer:hover {
-    color:cornflowerblue;
-} */
 
-a:hover {
-    color:crimson;
+H3  { color: red; }
+
+H4
+{
+    color: red;
+    font-size: 0.8em; 
 }
-H3, H4			{ color: red; }
-H4		{ font-size: 0.8em; }
+
+nav
+{
+
+}
+
+section
+{
+    margin: 0 1em;
+    /* border: 12px solid red; */
+    padding: 0.25em;
+    margin: 0.75em;
+}
+
+section + section   { border: 12px solid green; }
+
 textarea 	{ color: blue;	resize: none; }
 
-/* Classes */
-.container {
+/***************************************************/
+/*** Classes ***************************************/
+section > .bitmoji-pic
+{
+    width: 80%;
+}
+
+@media screen and (min-width: 425px)
+{
+    section > .bitmoji-pic
+    {
+        width: 300px;
+    }
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 5px solid #272737;
+    background: #dfc493;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+}
+.container
+{
     display: block;
     align-items: flex-end;
 }
 
-.container > section {
+.container > section
+{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0px;
 }
+
+.front-page
+{
+    /* background-color: #fc3939; */
+    background-color: #5639fc;
+    height: 82vh;
+    text-align: center;
+    color:whitesmoke;
+}
+
 .s { color: teal; }
 .skillscore	{ width: 30%; }
 
-
-/* IDs */
-#coderacademy {
-    border: 12px solid red;
+.taglines
+{
+    color: whitesmoke;
+    font-family:'Pacifico', cursive;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding-bottom: 2em;
 }
 
-#modal {
+
+
+/*****************************************************************/
+/*** IDs *********************************************************/
+
+#coderacademy { border: 12px solid red;  }
+
+
+#home-page-button:hover
+{
+    color: thistle;
+    cursor: pointer;
+}
+
+#modal
+{
     border: 4px solid black;
     position: absolute;
     top: 4em;
     left: 1em;
+    visibility: hidden;
 }
 #skscore { color: brown; }
 #skillscore { font-family: sans-serif; text-align: center; }
 
+#skillscore-label
+{
+    color: red;
+}
+
 /* Media Breakpoints */
 @media screen and (max-width: 600px)
 {
-    H3 { color: blue; }
+    #skillscore-label { color: blue; }
 }
 
-@media screen and (min-width: 640px;) {
-    .container {
-        display: flex;
-    }
+@media screen and (min-height: 540px)
+{
+    .front-page
+    { height: 650px; }
 }
 
-@media screen and (min-width: 1280px) {
-    .container {
+@media screen and (max-width: 374px)
+{
+    .front-page
+    { font-size: 80%;}
+}
+
+@media screen and (min-width: 640px;)
+{
+    .container
+    { display: flex; }
+}
+
+
+
+@media screen and (min-width: 1280px)
+{
+    .container
+    {
         width: 1280px;
         margin: 0 auto;
     }

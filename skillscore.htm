@@ -8,7 +8,7 @@
 </HEAD>
 <BODY>
 <form id="skillscore" name="skills"><BR><BR><BR><BR>
-	<H3><label for="s">Please select your skills:</label></H3><H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
+	<label for="s" id="skillscore-label">Please select your skills:</label><H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
 	<select class="skillscore" multiple id="s" name="s" style="height:140px;">
 		<option class="s" value=1>Python</option>
 		<option class="s" value=2>Ruby</option>
@@ -32,10 +32,10 @@
 	<BR />
 	Check out my other pages
 <P>
-	<a href="index.html">Index.html</a>
+	<a href="index.html">Home Page</a>
 </P>
 <P>
-	<a href="resume.html">Resume.html</a>
+	<a href="resume.html">My Resume</a>
 </P>
 </footer>
 
@@ -43,7 +43,7 @@
 function CodingSkillScore(skill)
 {
 	var skill_score = 0;
-	for (i = 0; i < skill.length; i++)
+	for (var i = 0; i < skill.length; i++)
 	{
 		if (skill[i].selected)	skill_score += parseInt(skill[i].value);
 	}
@@ -61,30 +61,15 @@ function CodingSkillRecommend(skill)
 	{	
 		if (!skill[i].selected)
 		{
-			skills_to_learn += skill[i].innerHTML;
-			skills_to_learn += (i < skill.length-1) ? ", " : ".";
+			skills_to_learn += skill[i].innerHTML + ", ";
+			skills_to_learn_score += parseInt(skill[i].value);
 		}
 	}
 
 	if (skills_to_learn == skills_to_learn_init) skills_to_learn += "<none>";
 
-	skills_to_learn += "\n\nIt will boost your Skills Score by:\n"
-	
-	for (var i = 0; i < skill.length; i++)
-	{
-		if (!skill[i].selected)	skills_to_learn_score += parseInt(skill[i].value);
-	}
-	
-	if (skills_to_learn_score > 0)
-	{
-		skills_to_learn += skills_to_learn_score;
-		skills_to_learn += "\n\nYour final score will be:\n"
-	}
-	else 
-	{
-		skills_to_learn += "<none>";
-		skills_to_learn += "\n\nYour final score will is:\n"
-	}
+	skills_to_learn += "\n\nIt will boost your Skills Score by:\n";
+	skills_to_learn += (skills_to_learn_score > 0) ? (skills_to_learn_score + "\n\nYour final score will be:\n") : ("<none>\n\nYour final score will is:\n");
 
 	final_score = parseInt(skills_to_learn_score) + CodingSkillScore(skill);
 

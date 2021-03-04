@@ -5,13 +5,61 @@
 	<META name="viewport" content="width=device-width, initial-scale=1.0" />
 	<META charset=UTF-8>
 	<TITLE>Skills Score</TITLE>
-	<link rel="stylesheet" href="css/index.css">
-</HEAD>
+	<link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+    <script src="js/nav.js"></script>
+</head>
 
-<BODY>
-	<form id="skillscore" name="skills"><BR><BR><BR><BR>
-		<label id="skillscore-label">Please select your skills:</label>
-		<H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
+<body>
+    <nav>
+        <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
+        <ul class="nav-links">
+            <li><a href="/index.html">
+                    Home
+                </a></li>
+            <li><a href="/portfolio.html">
+                    Portfolio
+                </a></li>
+            <li><a href="/blog.html">
+                    Blog
+                </a></li>
+            <li><a href="/index.html#about-me">
+                    About
+                </a></li>
+            <li><a href="/index.html#contact">
+                    Contact
+                </a></li>
+        </ul>
+        <a class="nav-button" onclick="showNav();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <!--📄-->
+    </nav>
+
+    <header class="front-page">
+
+        <H2 class="taglines">What programming skills do you have? Check your score below.</H2>
+
+        <a href="#page-content" class="taglines">
+			<P>
+                <img id="bitmoji-pic" src="docs/bitmoji-punit-score.png" alt="A Bitmoji Pic" />
+            </P>
+            ﹀ See below ﹀
+        </a>
+    </header>
+
+	<main id="page-content">
+		<section id="about-me" class="content-section">
+            <H2 class="section-heading">Skill Score</H2>
+        
+	<form id="skillscore">
+		<label id="skillscore-label">Please select your skills:
+		<H4>(Press Ctrl + Click to select multiple skills)</H4><BR/></label>
 		<select class="skillscore" multiple id="s" name="s" style="height:140px;">
 			<option class="s" value=1>Python</option>
 			<option class="s" value=2>Ruby</option>
@@ -30,6 +78,8 @@
 			onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);"><BR>
 		<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
 	</form>
+	</section>
+	</main>
 
 	<footer>Copyright &copy; 2021
 

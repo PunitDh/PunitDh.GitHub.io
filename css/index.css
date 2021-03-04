@@ -1,6 +1,7 @@
 /*********************************************************/
 /*** HTML Tags *******************************************/
-*
+
+* /* All */
 {
     margin: 0px;
     box-sizing: border-box;
@@ -8,7 +9,6 @@
     padding: 0px;
     overflow-x: hidden;
 }
-
 
 html
 {
@@ -48,13 +48,27 @@ nav
     font-family: 'Quicksand', sans-serif;
 }
 
-section { margin-bottom: 4em; }
+section
+{
+    margin-bottom: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0.2em;
+    text-align: center;
+}
 
 textarea 	{ color: blue;	resize: none; }
 
 /***************************************************/
 /*** Classes ***************************************/
-.box
+
+.box-container
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.box-button
 {
     display: inline-flex;
     justify-content: center;
@@ -66,9 +80,10 @@ textarea 	{ color: blue;	resize: none; }
     height: 200px;
     text-decoration: none;
     margin:1em;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.box:hover
+.box-button:hover
 {
     cursor: pointer;
     text-decoration: none;
@@ -77,29 +92,33 @@ textarea 	{ color: blue;	resize: none; }
     color: white;
 }
 
-.box-container
+.content
 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: stretch; */
+    font-family: 'Shippori Mincho B1', 'Times New Roman', serif;
 }
 
-.content-section
+.content::first-letter, .content > p::first-letter
 {
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 0.2em;
+    font-size: 2.5em;
+    font-style: italic;
 }
 
-.content-section:nth-of-type(1) {text-align: right;}
-.content-section:nth-of-type(2) {text-align: center;}
-.content-section:nth-of-type(3) {text-align: left;}
-.content-section:nth-of-type(4) {text-align: right;}
-.content-section:nth-of-type(5) {text-align: center;}
-.content-section:nth-of-type(6) {text-align: left;}
+.content > p
+{
+    text-indent: 3em;
+    text-align: left;
+}
 
-.front-page
+.content-section:nth-of-type(1) {  text-align: center; }
+.content-section:nth-of-type(2) {  text-align: right;  }
+.content-section:nth-of-type(3) {  text-align: center; }
+.content-section:nth-of-type(4) {  text-align: left;   }
+.content-section:nth-of-type(5) {  text-align: center; }
+.content-section:nth-of-type(6) {  text-align: right;  }
+.content-section:nth-of-type(7) {  text-align: center; }
+.content-section:nth-of-type(8) {  text-align: left;   }
+
+.front-page, .front-page-portfolio
 {
     /* background-color: #fc3939; */
     background-color: #3946fc;
@@ -110,19 +129,18 @@ textarea 	{ color: blue;	resize: none; }
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 374px)
-{ .front-page { font-size: 80%;} }
-
-.logo
+.front-page-portfolio
 {
-    font-family: 'Quicksand';
-    font-size: 1.5em;
-    word-spacing: 0.2em;
-    letter-spacing: 0.1em;
-    position: relative;
-    margin: 0em;
-    display: inline-block;
+    background-color: rgb(39, 40, 61);
+    background-image: url('/docs/computer-programming-bg.png');
+    background-size: 800px 400px;
+    background-blend-mode: soft-light;
 }
+
+@media screen and (max-width: 374px)
+{ .front-page, .front-page-portfolio  { font-size: 80%;}  }
+
+
 
  .nav-button
 {
@@ -185,11 +203,12 @@ textarea 	{ color: blue;	resize: none; }
     color: white;
     width: 200px;
     height: 200px;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .overlay:hover
 {
+    transform:scaleX(1.1);
     opacity: 0;
 }
 
@@ -199,6 +218,11 @@ textarea 	{ color: blue;	resize: none; }
     margin-bottom: 0.4em;
     font-family: 'Pacifico', cursive, sans-serif;
     font-size: 4em;
+}
+
+.see-more-button
+{
+    text-align: right;
 }
 
 .s { color: teal; }
@@ -222,16 +246,24 @@ a.taglines:hover {  text-decoration: underline;  }
 
 /*****************************************************************/
 /*** Unique IDs **************************************************/
-#bitmoji-pic {  width: 80%;  }
-
-@media screen and (min-width: 425px)
-{   #bitmoji-pic { width: 300px; } }
 
 #logo
 {
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    position: relative;
+    margin: 0em;
+    display: inline-block;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+#bitmoji-pic {  width: 90%;  }
+
+@media screen and (min-width: 425px)
+{   #bitmoji-pic { width: 300px; }   }
 
 #skscore { color: brown; }
 
@@ -251,10 +283,10 @@ a.taglines:hover {  text-decoration: underline;  }
 {
     body { overflow-x: hidden;}
 
-    .front-page
+    /* .front-page, .front-page-portfolio
     {
         scroll-behavior: unset;
-    }
+    } */
 
     .nav-links a,
     .nav-links a:active

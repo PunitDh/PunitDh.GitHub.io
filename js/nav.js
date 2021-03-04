@@ -1,8 +1,7 @@
 function showNav()
 {
-    var button  = document.querySelector('.nav-button');
-    var nav     = document.querySelector('.nav-links');
-    var navLinks= document.querySelectorAll('.nav-links li');
+    var nav       = document.querySelector('.nav-links');
+    var navLinks  = document.querySelectorAll('.nav-links li');
 
     nav.classList.toggle('nav-active');
 

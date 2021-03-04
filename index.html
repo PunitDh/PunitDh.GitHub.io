@@ -1,85 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--This is a comment-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punit&CloseCurlyQuote;s Page</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" />
     <script src="js/nav.js"></script>
 </head>
+
 <body>
-        <nav>
-            <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a class="nav-button" onclick="showNav();">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
-            <!--📄-->
-        </nav>
+    <nav>
+        <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
+        <ul class="nav-links">
+            <li><a href="/index.html">
+                    Home
+                </a></li>
+            <li><a href="/portfolio.html">
+                    Portfolio
+                </a></li>
+            <li><a href="/blog.html">
+                    Blog
+                </a></li>
+            <li><a href="/index.html#about-me">
+                    About
+                </a></li>
+            <li><a href="/index.html#contact">
+                    Contact
+                </a></li>
+        </ul>
+        <a class="nav-button" onclick="showNav();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <!--📄-->
+    </nav>
 
-        <main></main>
+    <header class="front-page">
 
-        <section class="front-page">
-                <H2 class="taglines">Programmer.&nbsp;&nbsp;
-                Web Developer.&nbsp;&nbsp;
-                Game Developer.&nbsp;&nbsp;
-                Public Speaker.&nbsp;&nbsp;
-                Life Coach.</H2>
-            <img class="bitmoji-pic" src="docs/bitmoji-punit-transp-backgr.png" alt="A Bitmoji Pic of Yours Truly" />
+        <H2 class="taglines">Programmer.&nbsp;&nbsp;
+            Web Developer.&nbsp;&nbsp;
+            Game Developer.&nbsp;&nbsp;
+            Public Speaker.&nbsp;&nbsp;
+            Life Coach.</H2>
 
-            <a href="#portfolio" class="taglines">﹀ See my work below ﹀</a>
+        <a href="#portfolio" class="taglines">
+            <P>
+                <img id="bitmoji-pic" src="docs/bitmoji-punit-transp-backgr.png" alt="A Bitmoji Pic" />
+            </P>
+            ﹀ See my work below ﹀
+        </a>
+    </header>
+
+    <main class="page-content">
+        <section id="about-me" class="content-section">
+            <H2 class="section-heading">About Me</H2>
+            <P>Hi, I'm Punit. I'm a passionate Sydney-based full-stack web developer with <B>20 years</B> experience in
+                JavaScript and JavaScript-like
+                languages.</P>
         </section>
 
-        <section id="about-me">
-            <h2 class="">About Me</h2>
-            <P>A passionate full-stack web developer with <B>20 years</B> experience in JavaScript and JavaScript-like languages</P>
+        <section id="portfolio" class="content-section">
+            <H2 class="section-heading">Portfolio</H2>
+            <!-- <div class="box-container">
+            <a href="/portfolio.html" class="box">Started programming at the age of 12, I have over 20 years experience in
+                HTML, JavaScript, CSS. Click here to check out my web development projects.<span class="overlay">Web Development</span></a>
+            <a href="/portfolio.html" class="box">Growing up I used to love gaming and RPG games were my favourite.
+                Inspired by famous games like Zelda, I started creating my own Action RPG. Click here to check out my
+                gaming projects<span class="overlay">Game Development</span></a>
+            <a href="/scripts.html" class="box">A collection of useful scripts that can be used in almost any language
+                Click here to check out my projects.<span class="overlay">Scripts</span></a>
+            <a href="/coach.html" class="box">I got my Diploma in Life Coaching in 2019 and I am also a trained public
+                speaker. <span class="overlay">Public Speaker & Life Coach</span></a>
+            </div> -->
+
+            <div class="box-container">
+                <a href="/portfolio.html" class="box">Passionate about both front-end and back-end web design. Click to
+                    check out my web development projects.<span class="overlay">Full-Stack Development</span></a>
+                <a href="/portfolio.html" class="box">Passionate about video game design. Click to check out my game
+                    design projects.<span class="overlay">Game Development</span></a>
+                <a href="/scripts.html" class="box">A collection of useful scripts I've written that can be used in
+                    almost any language. Click here to check out my projects.<span class="overlay">Scripts</span></a>
+                <a href="/coach.html" class="box">Life coach and trained public speaker. Click to check out my training
+                    offered.<span class="overlay">Public Speaker & Life Coach</span></a>
+            </div>
+
         </section>
 
-        <section id="blog">
-            <H2>Blog</H2>
-            <p>Assistant Manager</p>
+        <section id="blog" class="content-section">
+            <H2 class="section-heading">Blog</H2>
+            <p>Blog Post 1 :: Lorem Ipsum</p>
+            <a href="blog.html">... Read More</a>
+            <p>Blog Post 3 :: Lorem Ipsum</p>
         </section>
 
-        <section id="portfolio">
-            <H2>Portfolio</H2>
-            <p>F&B Attendant</p>
+        <section id="contact" class="content-section">
+            <H2 class="section-heading">Contact Me</H2>
+            <p>Let's get in touch!</p>
+
         </section>
+
+    </main>
 
     <footer>
-        
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                     alt="Valid CSS!" />
-                </a>
+            </a>
         </p>
-        Copyright &copy; 2021
-        <BR />
-        <BR />
         Check out my other pages
-    <P>
-        <a href="resume.html">Resume.html</a>
-    </P>
-    <P>
-        <a href="skillscore.htm">skillscore.htm</a>
-    </P>
+        <P>
+            <a href="resume.html">Resume.html</a>
+        </P>
+        <P>
+            <a href="skillscore.htm">skillscore.htm</a>
+        </P>
 
-    <P>
-        <a href="scripts.html">Scripts</a>
-    </P>
+        <P>
+            <a href="scripts.html">Scripts</a>
+        </P>
+        <BR />
+        <BR />
+        Copyright &copy; 2021
+
     </footer>
 </body>
 

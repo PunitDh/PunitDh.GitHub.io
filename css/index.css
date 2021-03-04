@@ -21,7 +21,7 @@ body
     font-size: 12pt;
     position: relative;
     background:rgb(235, 235, 235);
-    
+    display: block;
 }
 
 footer
@@ -45,35 +45,73 @@ nav
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    /* background-color: #826cff; */
     font-family: 'Quicksand', sans-serif;
 }
+
+section { margin-bottom: 4em; }
 
 textarea 	{ color: blue;	resize: none; }
 
 /***************************************************/
 /*** Classes ***************************************/
-section > .bitmoji-pic
+.box
 {
-    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    background-color: #3946fc;
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    margin:1em;
 }
 
-@media screen and (min-width: 425px)
+.box:hover
 {
-    section > .bitmoji-pic
-    {
-        width: 300px;
-    }
+    cursor: pointer;
+    text-decoration: none;
+    background-color:mediumblue;
+    transition: 0.75s;
+    color: white;
 }
+
+.box-container
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+}
+
+.content-section
+{
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0.2em;
+}
+
+.content-section:nth-of-type(1) {text-align: right;}
+.content-section:nth-of-type(2) {text-align: center;}
+.content-section:nth-of-type(3) {text-align: left;}
+.content-section:nth-of-type(4) {text-align: right;}
+.content-section:nth-of-type(5) {text-align: center;}
+.content-section:nth-of-type(6) {text-align: left;}
 
 .front-page
 {
     /* background-color: #fc3939; */
-    background-color: #5639fc;
-    height: 82vh;
+    background-color: #3946fc;
+    height: 85%;
     text-align: center;
-    color:whitesmoke;
+    color: whitesmoke;
+    overflow-y: initial;
+    overflow-x: hidden;
 }
+
+@media screen and (max-width: 374px)
+{ .front-page { font-size: 80%;} }
 
 .logo
 {
@@ -132,10 +170,39 @@ section > .bitmoji-pic
 
 .nav-active
 {
-    visibility: visible;
+    transform: translateX(0%);
+    z-index: 999;
+}
+
+.overlay
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    border: 5px solid black;
+    background-color: #3946fc;
+    color: white;
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+
+.overlay:hover
+{
+    opacity: 0;
+}
+
+.section-heading
+{
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-size: 4em;
 }
 
 .s { color: teal; }
+
 .skillscore	{ width: 30%; }
 
 .taglines
@@ -145,100 +212,93 @@ section > .bitmoji-pic
     position: relative;
     font-weight: bold;
     font-size: 1.8em;
-    padding-bottom: 2em;
+    padding: 0.5em;
     text-decoration: none;
     display: block;
 }
 
-a.taglines
-{
-    padding-top: 2em;
-}
-
-a.taglines:hover
-{
-    text-decoration: underline;
-}
+a.taglines:hover {  text-decoration: underline;  }
 
 
 /*****************************************************************/
-/*** IDs *********************************************************/
+/*** Unique IDs **************************************************/
+#bitmoji-pic {  width: 80%;  }
 
-#coderacademy { border: 12px solid red;  }
-
+@media screen and (min-width: 425px)
+{   #bitmoji-pic { width: 300px; } }
 
 #logo
 {
-    /* color: thistle; */
-    /* cursor: pointer; */
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-#modal
-{
-    border: 4px solid black;
-    position: absolute;
-    top: 4em;
-    left: 1em;
-    visibility: hidden;
-}
 #skscore { color: brown; }
+
 #skillscore { font-family: sans-serif; text-align: center; }
 
-#skillscore-label
-{
-    color: red;
-}
+#skillscore-label { color: red; }
 
-/* Media Breakpoints */
 @media screen and (max-width: 600px)
-{
-    #skillscore-label { color: blue; }
-}
+{ #skillscore-label { color: blue; } }
 
-@media screen and (min-height: 540px)
-{
-    .front-page
-    { height: 650px; }
-}
 
-@media screen and (max-width: 374px)
-{
-    .front-page
-    { font-size: 80%;}
-}
 
-@media screen and (min-width: 640px)
-{
-    .container
-    { display: flex; }
-}
+/*****************************************************************/
+/*** Media Breakpoints for different screen sizes ****************/
 
 @media screen and (max-width: 800px)
 {
     body { overflow-x: hidden;}
 
+    .front-page
+    {
+        scroll-behavior: unset;
+    }
+
     .nav-links a,
-    .nav-links a:active {   width:100%; color:#f8f8f8;   }
+    .nav-links a:active
+    {
+        width:100%;
+        color:#f8f8f8;
+        padding: 2em;
+        text-align: center;
+    }
 
     .nav-links
     { 
         position: absolute;
         right: 0px;
         height: 82vh;
-        top: 12vh;
-        background-color: #396afc;
+        top: 10vh;
+        background-color: #3713fd;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 9999;
+        transition: transform 0.25s ease-in;
     }
 
-    .nav-links li {    opacity: 0;      }
+    .nav-links li
+    {
+        display: flex;
+        align-items: center;
+        width:100%;
+        opacity: 0;
+        color:#f8f8f8;
+        height:20%;
+    }
+
+    .nav-links li:hover
+    {
+        background-color: #4c2cff;
+    }
+
+    .nav-links a:hover
+    {
+        color:#f8f8f8;
+    }
 
     .nav-active
     {
@@ -253,27 +313,19 @@ a.taglines:hover
         right: 2em;
     }
 
-    .overlay { opacity: 0.8; } 
+    /* .overlay { opacity: 0.8; }  */
 }
 
-@keyframes navLinkFade {
-    from {
+@keyframes navLinkFade
+{
+    from
+    {
       opacity: 0;
       transform: translateX(50px);
     }
-    to {
+    to
+    {
       opacity: 1;
       transform: translateX(0px);
-    }
-  }
-
-
-
-@media screen and (min-width: 1280px)
-{
-    .container
-    {
-        width: 1280px;
-        margin: 0 auto;
     }
 }

@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <HTML lang="en">
+
 <HEAD>
-	<META name ="viewport" content="width=device-width, initial-scale=1.0" />
+	<META name="viewport" content="width=device-width, initial-scale=1.0" />
 	<META charset=UTF-8>
-<TITLE>Skills Score</TITLE>
-<link rel="stylesheet" href="css/index.css">
+	<TITLE>Skills Score</TITLE>
+	<link rel="stylesheet" href="css/index.css">
 </HEAD>
+
 <BODY>
-<form id="skillscore" name="skills"><BR><BR><BR><BR>
-	<label for="s" id="skillscore-label">Please select your skills:</label><H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
-	<select class="skillscore" multiple id="s" name="s" style="height:140px;">
-		<option class="s" value=1>Python</option>
-		<option class="s" value=2>Ruby</option>
-		<option class="s" value=4>Bash</option>
-		<option class="s" value=8>Git</option>
-		<option class="s" value=16>HTML</option>
-		<option class="s" value=32>TDD</option>
-		<option class="s" value=64>CSS</option>
-		<option class="s" value=128>JavaScript</option>
-	</select>
-	<BR><BR>
-	<input type="button" class="skillscore" value="Find My Skill Scores!" onClick="this.form.skscore.value = CodingSkillScore(this.form.s);"><BR>
-	<input type="text" class="skillscore" id="skscore" name="skscore"><BR><BR>
-	<input type="button" class="skillscore" value="Recommend Me Skills To Learn!" onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);" ><BR>
-	<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
-</form>
+	<form id="skillscore" name="skills"><BR><BR><BR><BR>
+		<label id="skillscore-label">Please select your skills:</label>
+		<H4>(Press Ctrl + Click to select multiple skills)</H4><BR>
+		<select class="skillscore" multiple id="s" name="s" style="height:140px;">
+			<option class="s" value=1>Python</option>
+			<option class="s" value=2>Ruby</option>
+			<option class="s" value=4>Bash</option>
+			<option class="s" value=8>Git</option>
+			<option class="s" value=16>HTML</option>
+			<option class="s" value=32>TDD</option>
+			<option class="s" value=64>CSS</option>
+			<option class="s" value=128>JavaScript</option>
+		</select>
+		<BR><BR>
+		<input type="button" class="skillscore" value="Find My Skill Scores!"
+			onClick="this.form.skscore.value = CodingSkillScore(this.form.s);"><BR>
+		<input type="text" class="skillscore" id="skscore" name="skscore"><BR><BR>
+		<input type="button" class="skillscore" value="Recommend Me Skills To Learn!"
+			onClick="this.form.skrecommend.value = CodingSkillRecommend(this.form.s);"><BR>
+		<textarea name="skrecommend" class="skillscore" style="height:140px;"></textarea>
+	</form>
 
-<footer>Copyright &copy; 2021
+	<footer>Copyright &copy; 2021
 
-	<BR />
-	<BR />
-	Check out my other pages
-<P>
-	<a href="index.html">Home Page</a>
-</P>
-<P>
-	<a href="resume.html">My Resume</a>
-</P>
-</footer>
+		<BR />
+		<BR />
+		Check out my other pages
+		<P>
+			<a href="index.html">Home Page</a>
+		</P>
+		<P>
+			<a href="resume.html">My Resume</a>
+		</P>
+	</footer>
 
-<script>
-function CodingSkillScore(skill)
-{
-	var skill_score = 0;
-	for (var i = 0; i < skill.length; i++)
-	{
-		if (skill[i].selected)	skill_score += parseInt(skill[i].value);
-	}
-	return skill_score;
-}
-
-function CodingSkillRecommend(skill)
-{
-	var skills_to_learn_init	= "You should learn the following skills:\n";
-	var skills_to_learn			= skills_to_learn_init;
-	var skills_to_learn_score	= 0;
-	var final_score				= 0;
-
-	for (var i = 0; i < skill.length; i++)
-	{	
-		if (!skill[i].selected)
-		{
-			skills_to_learn += skill[i].innerHTML + ", ";
-			skills_to_learn_score += parseInt(skill[i].value);
+	<script>
+		function CodingSkillScore(skill) {
+			var skill_score = 0;
+			for (var i = 0; i < skill.length; i++) {
+				if (skill[i].selected) skill_score += parseInt(skill[i].value);
+			}
+			return skill_score;
 		}
-	}
 
-	if (skills_to_learn == skills_to_learn_init) skills_to_learn += "<none>";
+		function CodingSkillRecommend(skill) {
+			var skills_to_learn_init = "You should learn the following skills:\n";
+			var skills_to_learn = skills_to_learn_init;
+			var skills_to_learn_score = 0;
+			var final_score = 0;
 
-	skills_to_learn += "\n\nIt will boost your Skills Score by:\n";
-	skills_to_learn += (skills_to_learn_score > 0) ? (skills_to_learn_score + "\n\nYour final score will be:\n") : ("<none>\n\nYour final score will is:\n");
+			for (var i = 0; i < skill.length; i++) {
+				if (!skill[i].selected) {
+					skills_to_learn += skill[i].innerHTML + ", ";
+					skills_to_learn_score += parseInt(skill[i].value);
+				}
+			}
 
-	final_score = parseInt(skills_to_learn_score) + CodingSkillScore(skill);
+			if (skills_to_learn == skills_to_learn_init) skills_to_learn += "<none>";
 
-	skills_to_learn += final_score;
-	return skills_to_learn;
-}
-</script>
+			skills_to_learn += "\n\nIt will boost your Skills Score by:\n";
+			skills_to_learn += (skills_to_learn_score > 0) ? (skills_to_learn_score + "\n\nYour final score will be:\n") : ("<none>\n\nYour final score will is:\n");
+
+			final_score = parseInt(skills_to_learn_score) + CodingSkillScore(skill);
+
+			skills_to_learn += final_score;
+			return skills_to_learn;
+		}
+	</script>
 
 </BODY>
+
 </HTML>

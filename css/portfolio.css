@@ -1,4 +1,4 @@
-.slideshow > div 
+/* .slideshow > div 
 {
     top: 1em;
     left: 0;
@@ -27,4 +27,16 @@
         -webkit-transform: translateX(-66.6666%);
         transform: translateX(-66.6666%);
     }
+} */
+
+.slideshow
+{
+    max-width: 4096px;
+}
+
+.slideshow .mover
+{
+    display: block;
+    overflow: auto;
+    width: 100%;
 }

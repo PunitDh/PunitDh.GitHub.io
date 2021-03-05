@@ -29,12 +29,12 @@
     }
 } */
 
-.slideshow
+#slideshow
 {
     max-width: 4096px;
 }
 
-.slideshow .mover
+#slideshow .mover
 {
     display: block;
     overflow: auto;

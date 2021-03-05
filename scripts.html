@@ -14,31 +14,49 @@
 
 <body>
     <nav>
-        <H1 id="home-page-button">Punit&CloseCurlyQuote;s Page</H1>
-        <!-- <span>📄</span> -->
-        <!-- <div id="modal">
-            Hello World
-            <button>OK</button>
-        </div> -->
-
-
+        <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
+        <ul class="nav-links">
+            <li><a href="/index.html">
+                    Home
+                </a></li>
+            <li><a href="/portfolio.html">
+                    Portfolio
+                </a></li>
+            <li><a href="/blog.html">
+                    Blog
+                </a></li>
+            <li><a href="/index.html#about-me">
+                    About
+                </a></li>
+            <li><a href="/index.html#contact">
+                    Contact
+                </a></li>
+        </ul>
+        <a class="nav-button" onclick="showNav();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <!--📄-->
     </nav>
 
-    <main></main>
+    <header class="front-page-portfolio">
 
-    <section class="front-page">
-        <P class="taglines">My Scripts</P>
-        <!-- Programmer.<BR />
-                Developer.<BR />
-                Game Designer.<BR />
-                Public Speaker.<BR />
-                Life Coach.<BR /> -->
+        <H2 class="taglines">Check out my portfolio</H2>
 
-        <P class="taglines">﹀ See my work below ﹀</P>
-    </section>
+        <a href="#page-content" class="taglines">
+            <P>
+                <img id="bitmoji-pic" src="docs/bitmoji-punit-computer-transp-backgr.png" alt="A Bitmoji Pic" />
+            </P>
 
-    <code>
-        <Pre><code class="lang-javascript"><span class="hljs-comment">/// @desc</span>
+            ﹀ See below ﹀
+        </a>
+    </header>
+
+    <main id="page-content">
+        <Pre>
+        <code class="lang-javascript">
+            <span class="hljs-comment">/// @desc</span>
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">array_find</span><span class="hljs-params"><span class="hljs-operations">(</span>_arr<span class="hljs-operations">,</span> _val<span class="hljs-operations">)</span></span>
             </span><span class="hljs-operations">{</span>
                 <span class="hljs-keyword">var</span> _ind <span class="hljs-operations">=</span> <span class="hljs-number">-1</span><span class="hljs-operations">;</span>
@@ -53,11 +71,12 @@
                 <span class="hljs-operations">}</span>
                 <span class="hljs-keyword">return</span> _ind<span class="hljs-operations">;</span>
             <span class="hljs-operations">}</span>
-    </code></Pre>
+        </code>
+        </PRE>
 
-    </code>
 
 
+    </main>
     <footer>
         <P> <a href="http://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"

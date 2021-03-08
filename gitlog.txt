@@ -1,3 +1,33 @@
+commit 7bf02d602f6e568fad66824cbc969ce1aae72dcd
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 8 16:34:38 2021 +1100
+
+    Update navigation bar to be sticky when active
+
+commit 2f67882c260cb3fa0bc120ff8f5da07a77e921f6
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 8 15:06:29 2021 +1100
+
+    Fix font size issue in navigation menu
+
+commit dc9bd7236ed129152013952630637d6f97a755f2
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 8 14:47:49 2021 +1100
+
+    Add 'X' functionality to navigation bar menu
+
+commit a9ebab7440d40b2fac5ebf3d93c44a1cd8a5d8b6
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 8 13:50:59 2021 +1100
+
+    Fix context menu issue
+
+commit f2ffcd99389c17c86494dfa6e466f0e2e14f4593
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Mon Mar 8 13:24:30 2021 +1100
+
+    Replace fonts and colour scheme to an original style
+
 commit 11b645658303ad8ae16619877263e03e582503e6
 Author: root <root@Punit-BeastPC.localdomain>
 Date:   Sat Mar 6 01:11:16 2021 +1100

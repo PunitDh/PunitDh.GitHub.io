@@ -9,15 +9,12 @@ function showNav()
     navButton.classList.toggle('nav-button-active');
     stickyBar.classList.toggle('sticky-bar-active');
 
-    if (navMenu.classList == "nav-links nav-active")
+    navLink.forEach((link, index) => 
     {
-        navLink.forEach((link, index) => 
+        with (link.style)
         {
-            with (link.style)
-            {
-                if (animation) animation = ''
-                else animation = 'navBarAnimation 0.2s ease forwards';
-            }
-        });
-    }
+            if (animation) animation = ''
+            else animation = 'navBarAnimation 0.2s ease forwards';
+        }
+    });
 }

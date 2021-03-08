@@ -1,15 +1,17 @@
 function showNav()
 {
-    var nav       = document.querySelector('.nav-links');
-    var navLinks  = document.querySelectorAll('.nav-links li');
+    var navMenu   = document.querySelector('.nav-links');
+    var navLink   = document.querySelectorAll('.nav-links li');
+    var navButton = document.querySelector('.nav-button');
 
-    nav.classList.toggle('nav-active');
+    navButton.classList.toggle('nav-button-active');
+    navMenu.classList.toggle('nav-active');
     
-    navLinks.forEach((link, index) => {
+    navLink.forEach((link, index) => {
       with (link.style)
       {
         if (animation) animation = ''
-        else animation = 'navBarAnimation 0.10s ease forwards';
+        else animation = 'navBarAnimation 0.2s ease forwards';
       }
     });
 }

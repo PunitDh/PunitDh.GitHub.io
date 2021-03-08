@@ -1,3 +1,11 @@
+.front-page-portfolio
+{
+    background-color: rgb(39, 40, 61);
+    background-image: url('/docs/computer-programming-bg.png');
+    background-size: 800px 400px;
+    background-blend-mode:multiply;
+}
+
 #slideshow
 {
     max-width: 4096px;

@@ -17,7 +17,7 @@ html
 
 body
 {
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12pt;
     position: relative;
     background:rgb(235, 235, 235);
@@ -48,7 +48,7 @@ nav
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 section
@@ -65,6 +65,17 @@ textarea 	{ color: blue;	resize: none; }
 /***************************************************/
 /*** Classes ***************************************/
 
+.blog-post-date
+{
+    text-align: right;
+    font-style: italic;
+}
+
+.button-see-more
+{
+    text-align: right;
+}
+
 .box-container
 {
     display: inline-flex;
@@ -77,20 +88,20 @@ textarea 	{ color: blue;	resize: none; }
     justify-content: center;
     align-items: center;
     border: 5px solid black;
-    background-color: #3946fc;
+    background-color: #f81717;
     color: white;
     width: 200px;
     height: 200px;
     text-decoration: none;
     margin:1em;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .box-button:hover
 {
     cursor: pointer;
     text-decoration: none;
-    background-color:mediumblue;
+    background-color:rgb(153, 0, 0);
     transition: 0.75s;
     color: white;
 }
@@ -98,7 +109,7 @@ textarea 	{ color: blue;	resize: none; }
 .front-page, .front-page-portfolio
 {
     /* background-color: #fc3939; */
-    background-color: #3946fc;
+    background-color: #f71a1a;
     height: 85%;
     text-align: center;
     color: whitesmoke;
@@ -111,7 +122,7 @@ textarea 	{ color: blue;	resize: none; }
     background-color: rgb(39, 40, 61);
     background-image: url('/docs/computer-programming-bg.png');
     background-size: 800px 400px;
-    background-blend-mode: soft-light;
+    background-blend-mode:multiply;
 }
 
 @media screen and (max-width: 374px)
@@ -150,11 +161,13 @@ textarea 	{ color: blue;	resize: none; }
     display: flex;
     justify-content: space-around;
     width: 45%;
+    transform: scaleX(0%);
 }
 
 .nav-links li
 {
     list-style: none;
+    
 }
 
 .nav-links a,
@@ -170,7 +183,7 @@ textarea 	{ color: blue;	resize: none; }
 .nav-links a:hover
 {
     transition: color 0.5s;
-    color: #f34a4a;
+    color: #e95353;
     text-decoration: underline;
 }
 
@@ -185,9 +198,9 @@ textarea 	{ color: blue;	resize: none; }
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     border: 5px solid black;
-    background-color: #3946fc;
+    background-color: #fc1818;
     color: white;
     width: 200px;
     height: 200px;
@@ -208,7 +221,7 @@ textarea 	{ color: blue;	resize: none; }
 
 .section-content
 {
-    font-family: 'Shippori Mincho B1', 'Times New Roman', serif;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .section-content > p::first-letter
@@ -242,13 +255,8 @@ textarea 	{ color: blue;	resize: none; }
 {
     margin-top: 1em;
     margin-bottom: 0.4em;
-    font-family: 'Pacifico', cursive, sans-serif;
+    font-family: 'Lobster', cursive, sans-serif;
     font-size: 4em;
-}
-
-.see-more-button
-{
-    text-align: right;
 }
 
 .s { color: teal; }
@@ -257,14 +265,14 @@ textarea 	{ color: blue;	resize: none; }
 
 .taglines
 {
-    color: whitesmoke;
-    font-family:'Pacifico', cursive;
-    position: relative;
-    font-weight: bold;
-    font-size: 1.8em;
-    padding: 0.5em;
-    text-decoration: none;
-    display: block;
+    color:               whitesmoke;
+    font-family:        'Lobster', cursive;
+    position:           relative;
+    font-weight:        bold;
+    font-size:          1.8em;
+    padding:            0.5em;
+    text-decoration:    none;
+    display:            block;
 }
 
 a.taglines:hover {  text-decoration: underline;  }
@@ -286,7 +294,7 @@ a.taglines:hover {  text-decoration: underline;  }
 
 #logo
 {
-    font-family: 'Quicksand';
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.5em;
     word-spacing: 0.2em;
     letter-spacing: 0.1em;
@@ -309,7 +317,7 @@ a.taglines:hover {  text-decoration: underline;  }
 
 #skscore { color: brown; }
 
-#skillscore { font-family: sans-serif; text-align: center; }
+#skillscore { font-family: 'Noto Sans JP', sans-serif; text-align: center; }
 
 #skillscore-label { color: red; }
 
@@ -323,12 +331,7 @@ a.taglines:hover {  text-decoration: underline;  }
 
 @media screen and (max-width: 800px)
 {
-    body { overflow-x: hidden;}
-
-    /* .front-page, .front-page-portfolio
-    {
-        scroll-behavior: unset;
-    } */
+    body {  overflow-x: hidden;  }
 
     .nav-links a,
     .nav-links a:active
@@ -345,7 +348,7 @@ a.taglines:hover {  text-decoration: underline;  }
         right: 0px;
         height: 82vh;
         top: 10vh;
-        background-color: #3713fd;
+        background-color: #a50606;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -366,7 +369,7 @@ a.taglines:hover {  text-decoration: underline;  }
 
     .nav-links li:hover
     {
-        background-color: #4c2cff;
+        background-color: #fd4545;
     }
 
     .nav-links a:hover
@@ -386,33 +389,32 @@ a.taglines:hover {  text-decoration: underline;  }
         position: absolute;
         right: 2em;
     }
-
-    /* .overlay { opacity: 0.8; }  */
 }
 
 @media screen and (max-width:340px)
 { 
-    .section-heading {  font-size: 1.2em;  }
-    .content {  font-size: 0.80em; }
-    .content > p {  font-size: 0.80em;  }
-    .footer { font-size: 0.70em;  }
+    .section-heading {  font-size: 1.8em;   }
+    .content         {  font-size: 0.80em;  }
+    .content > p     {  font-size: 0.80em;  }
+    .footer          {  font-size: 0.70em;  }
 }
 
 
 @media screen and (max-width:700px)
 { 
-    .section-heading {  font-size: 1.4em;  }
-    .content {  font-size: 0.90em;  }
-    .content > p {  font-size: 0.90em;  }
-    .footer { font-size: 0.80em;  }
-    .see-more-button {  text-align: center;  }
+    .section-heading {  font-size: 2.0em;    }
+    .content         {  font-size: 0.90em;   }
+    .content > p     {  font-size: 0.90em;   }
+    .footer          {  font-size: 0.80em;   }
+    .blog-post-date,
+    .button-see-more {  text-align: center;  }
 }
 
 
 /*******************************************************************/
 /*** Keyframes *****************************************************/
 
-@keyframes navLinkFade
+@keyframes navBarAnimation
 {
     from
     {

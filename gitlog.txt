@@ -1,3 +1,57 @@
+commit 11b645658303ad8ae16619877263e03e582503e6
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Sat Mar 6 01:11:16 2021 +1100
+
+    Update header and footer sections for all remaining pages
+
+commit 117ff0a8c5c2357d47da05f6fdc0617cdac5f7ac
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Fri Mar 5 15:01:48 2021 +1100
+
+    Update footer CSS, change PDF Viewer size
+
+commit 40bf2060e82f5271c0f7cc0b60730bae4360d9ae
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Fri Mar 5 11:44:45 2021 +1100
+
+    Update CSS for section headers, update resume page to be visible on all devices
+
+commit 82c28342cefd39dbe0329b20bbbb0a3d9039803e
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Fri Mar 5 11:31:48 2021 +1100
+
+    Make edits to CSS and HTML styles to reduce errors
+
+commit 00907ae08216e1a11ea3e021a2b0c7734c9b6fbc
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 22:53:32 2021 +1100
+
+    Fix font sizes for different resolutions
+
+commit fba92de715186b7be90b1eccdda367e81f529cce
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 22:43:21 2021 +1100
+
+    Add resume.html page, manipulate portfolio text and images
+
+commit 6718ca0d50e7b03e60aa4184e06eac436a771b7e
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 22:12:40 2021 +1100
+
+    Create same style for all pages, generate images for all pages, create portfolio and blog pages
+
+commit acb82ecbd9105229ca26401ed784473c0e37b7fe
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 15:01:59 2021 +1100
+
+    Finalise fully function navbar, add navigation to other pages, create other dummy pages
+
+commit a11986c74653299539fccb4014f437033adeff35
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 4 10:29:41 2021 +1100
+
+    Fix 'overflow-x' issue, add menu animation and functionality
+
 commit b984ccb26297f9db6cc05b31bc2b119af77100ce
 Author: root <root@Punit-BeastPC.localdomain>
 Date:   Thu Mar 4 01:02:05 2021 +1100

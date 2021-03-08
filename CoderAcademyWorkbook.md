@@ -47,7 +47,8 @@
         ere
 
 ## Question 4
-
+	Three data structures in Ruby are as follows: Arrays, Binary Trees and Hashes.
+	
 
 ## Question 5
 

@@ -4,12 +4,12 @@ function showNav()
     var navLinks  = document.querySelectorAll('.nav-links li');
 
     nav.classList.toggle('nav-active');
-
+    
     navLinks.forEach((link, index) => {
-      if (link.style.animation){
-        link.style.animation = ''
-      } else {
-        link.style.animation = `navLinkFade 0.15s ease forwards ${index / 9 + 1}s`;
+      with (link.style)
+      {
+        if (animation) animation = ''
+        else animation = 'navBarAnimation 0.10s ease forwards';
       }
     });
 }

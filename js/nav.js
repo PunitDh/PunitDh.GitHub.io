@@ -1,17 +1,23 @@
 function showNav()
 {
     var navMenu   = document.querySelector('.nav-links');
-    var navLink   = document.querySelectorAll('.nav-links li');
     var navButton = document.querySelector('.nav-button');
+    var stickyBar = document.querySelector('.sticky-bar');
+    var navLink   = document.querySelectorAll('.nav-links li');
 
-    navButton.classList.toggle('nav-button-active');
     navMenu.classList.toggle('nav-active');
-    
-    navLink.forEach((link, index) => {
-      with (link.style)
-      {
-        if (animation) animation = ''
-        else animation = 'navBarAnimation 0.2s ease forwards';
-      }
-    });
+    navButton.classList.toggle('nav-button-active');
+    stickyBar.classList.toggle('sticky-bar-active');
+
+    if (navMenu.classList == "nav-links nav-active")
+    {
+        navLink.forEach((link, index) => 
+        {
+            with (link.style)
+            {
+                if (animation) animation = ''
+                else animation = 'navBarAnimation 0.2s ease forwards';
+            }
+        });
+    }
 }

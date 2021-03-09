@@ -2,9 +2,9 @@ gitlog_oneline.txt
 CoderAcademyWorkbook.md
 test.html
 css/test.css
-*.jpeg
-*.gif
-*.pdf
+docs/*.jpeg
+docs/*.gif
+docs/*.pdf
 Portfolio_Slide_Deck_Speech.docx
 Portfolio_Slide_Deck.pptx
 Portfolio_Slide_Deck.pptx

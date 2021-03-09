@@ -1,6 +1,6 @@
 #contact .contact-form-container
 {
-    width: 80%;
+    width: 90%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -9,17 +9,25 @@
     display: flexbox;
     justify-content: flex-start;
     align-content: center;
+    max-width: 600px;
+    text-align: left; 
 }
 
-#contact .contact-form-container label
+#contact label
 {
+    margin-left: 1.7em;
+}
 
-    /* text-align: left;  */
+#contact div::first-letter
+{
+    font-size: 2.5em;
+    font-style: italic;
 }
 
 #contact input[type=text], textarea, input[type=email]
 {
     width: 90%;
+    /*  */
     margin-left: 2em;
     padding: 12px;
     border: 1px solid;
@@ -53,20 +61,12 @@
     /* width: 90%; */
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 420px)
 {
-    #contact textarea
+    #contact input[type=text], input[type=submit], input[type=email], textarea
     {
-        height: 80%;
+        margin-left: 0.25em;
     }
-}
 
-#contact .contact-form-container
-{
-    text-align: left;
-}
-
-#contact label
-{
-    margin: 1.7em;
+    #contact label { margin-left: 0.25em; }
 }

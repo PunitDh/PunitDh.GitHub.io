@@ -1,0 +1,72 @@
+#contact .contact-form-container
+{
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    align-items: flex-start;
+    display: flexbox;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+#contact .contact-form-container label
+{
+
+    /* text-align: left;  */
+}
+
+#contact input[type=text], textarea, input[type=email]
+{
+    width: 90%;
+    margin-left: 2em;
+    padding: 12px;
+    border: 1px solid;
+    background: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contact input[type=submit]
+{
+    margin-left: 2em;
+    background-color: #4c77af;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact input[type=submit]:hover
+{
+    background-color: #6aa8f8;
+}
+
+#contact textarea
+{
+    height: 200px;
+    /* width: 90%; */
+}
+
+@media screen and (max-width: 800px)
+{
+    #contact textarea
+    {
+        height: 80%;
+    }
+}
+
+#contact .contact-form-container
+{
+    text-align: left;
+}
+
+#contact label
+{
+    margin: 1.7em;
+}

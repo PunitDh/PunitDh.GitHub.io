@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="http://punitdh.github.io/" />
+
     <title>Punit's Portfolio</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
@@ -17,37 +19,37 @@
 
 <body>
     <!---I used to <nav>, <header>, <main> and <footer> tags to denote different parts of the document <body>. Every <main> tag is separated into <section>. -->
-        <nav class="sticky-bar">
+    <nav class="sticky-bar">
 
-            <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
-    
-            <a class="nav-button" href="javascript:showNav();">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
-    
-    
-            <!--The nav links below change properties based on the size of the window. -->
-            <ul class="nav-links">
-                <li><a href="/index.html" onclick="showNav();">
-                        Home
-                    </a></li>
-                <li><a href="/portfolio.html" onclick="showNav();">
-                        Portfolio
-                    </a></li>
-                <li><a href="/blog.html" onclick="showNav();">
-                        Blog
-                    </a></li>
-                <li><a href="/index.html#about-me" onclick="showNav();">
-                        About
-                    </a></li>
-                <li><a href="/index.html#contact" onclick="showNav();">
-                        Contact
-                    </a></li>
-            </ul>
-            <!--📄-->
-        </nav>
+        <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
+
+        <a class="nav-button" href="javascript:showNav();">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+
+
+        <!--The nav links below change properties based on the size of the window. -->
+        <ul class="nav-links">
+            <li><a href="/index.html" onclick="showNav();">
+                    Home
+                </a></li>
+            <li><a href="/portfolio.html" onclick="showNav();">
+                    Portfolio
+                </a></li>
+            <li><a href="/blog.html" onclick="showNav();">
+                    Blog
+                </a></li>
+            <li><a href="/index.html#about-me" onclick="showNav();">
+                    About
+                </a></li>
+            <li><a href="/contact.html" onclick="showNav();">
+                    Contact
+                </a></li>
+        </ul>
+        <!--📄-->
+    </nav>
 
     <header class="front-page-portfolio">
 
@@ -105,12 +107,19 @@
             <H2 class="section-heading">My Scripts</H2>
             <details class="section-details">
                 <summary> I wrote a collection of short scripts I wrote that show off my programming skills</summary>
+                <ol class="ordered-list">
+                <!-- <ol id="test"> -->
+                    <li>Want to find out what your coding skills are worth? <a href="skillscore.html">Click here</a>.
+                    </li>
+                    <li>Want to find out what your coding skills are worth? <a href="skillscore.html">Click here</a>.
+                    </li>
+                </ol>
             </details>
         </section>
 
         <section id="life-coaching" class="section-content">
             <H2 class="section-heading">Life Coaching & Public Speaking</H2>
-            <details>
+            <details class="section-details">
                 <summary class="section-summary">I studied Diploma of Life Coaching in 2019-2020 and am also a trained
                     public speaker.</summary>
                 <P>

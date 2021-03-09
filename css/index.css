@@ -1,4 +1,6 @@
-* /* All */
+/***********************************************************************************************/
+/*** All ***************************************************************************************/
+*
 {
     margin: auto;
     box-sizing: border-box;
@@ -8,10 +10,10 @@
 }
 
 
-/*************************************************************/
-/*** Colour Scheme *******************************************/
+/***********************************************************************************************/
+/*** Colour Scheme *****************************************************************************/
 
-.front-page, .front-page-portfolio, .overlay
+.front-banner, .front-banner-portfolio, .overlay
 {
     background-color: #3390FF;
 }
@@ -24,8 +26,8 @@ footer a:hover
 }
 
 
-/*********************************************************/
-/*** HTML Tags *******************************************/
+/***********************************************************************************************/
+/*** HTML Tags *********************************************************************************/
 
 html
 {
@@ -40,6 +42,9 @@ body
     background-color:rgb(235, 235, 235);
     display: block;
 }
+
+a > button
+{   cursor: pointer; }
 
 footer
 {
@@ -59,11 +64,11 @@ footer p
     font-family: 'Noto Serif JP', serif;
 }
 
-H4
+/* H4
 {
     color: red;
     font-size: 0.8em; 
-}
+} */
 
 nav
 {
@@ -89,10 +94,10 @@ section
     text-align: center;
 }
 
-textarea 	{ color: blue;	resize: none; }
+/*textarea 	{ color: blue;	resize: none; }*/
 
-/***************************************************/
-/*** Classes ***************************************/
+/***********************************************************************************************/
+/*** Classes ***********************************************************************************/
 
 .blog-post-date
 {
@@ -105,9 +110,8 @@ textarea 	{ color: blue;	resize: none; }
     text-align: right;
 }
 
-.front-page, .front-page-portfolio
+.front-banner, .front-banner-portfolio
 {
-    /* background-color: #fc3939; */
     top: 8vh;
     height: 85%;
     text-align: center;
@@ -116,7 +120,7 @@ textarea 	{ color: blue;	resize: none; }
 }
 
 @media screen and (max-width: 374px)
-{ .front-page, .front-page-portfolio  { font-size: 80%;}  }
+{ .front-banner, .front-banner-portfolio  { font-size: 80%;}  }
 
 .logo-image
 {
@@ -125,7 +129,6 @@ textarea 	{ color: blue;	resize: none; }
 
 .logo-link
 {
-    /* text-align: center; */
     margin-top: 2em;
     width: 4em;
     height: 4em;
@@ -207,10 +210,6 @@ footer a:hover
     text-align: left;
 }
 
-/* #test {
-    list-style-type: upper-roman;
-} */
-
 .section-summary::first-letter
 {
     font-size: 2.5em;
@@ -257,8 +256,8 @@ footer a:hover
 
 a.taglines:hover {  text-decoration: underline;  }
 
-/*****************************************************************/
-/*** Unique IDs **************************************************/
+/***********************************************************************************************/
+/*** Unique IDs ********************************************************************************/
 
 #logo
 {
@@ -477,12 +476,6 @@ a.taglines:hover {  text-decoration: underline;  }
     transform: rotateY(180deg);
   } */
 
-
-
-
-
-
-
 #skscore { color: brown; }
 
 #skillscore { font-family: 'Noto Sans JP', sans-serif; text-align: center; }
@@ -492,10 +485,8 @@ a.taglines:hover {  text-decoration: underline;  }
 @media screen and (max-width: 600px)
 { #skillscore-label { color: blue; } }
 
-
-
-/*****************************************************************/
-/*** Media Breakpoints for different screen sizes ****************/
+/***********************************************************************************************/
+/*** Media Breakpoints for different screen sizes **********************************************/
 
 @media screen and (max-width: 800px)
 {
@@ -569,11 +560,6 @@ a.taglines:hover {  text-decoration: underline;  }
         border: 2px solid #0638a5;
     }
 
-    .sticky-bar
-    {
-        background-color: rgb(235, 235, 235);
-    }
-
     .sticky-bar-active
     {
         display: inline-flex;
@@ -612,7 +598,6 @@ a.taglines:hover {  text-decoration: underline;  }
     }
 }
 
-
 @media screen and (max-width:700px)
 { 
     .section-heading {  font-size: 2.0em;    }
@@ -624,8 +609,8 @@ a.taglines:hover {  text-decoration: underline;  }
 }
 
 
-/*******************************************************************/
-/*** Keyframes *****************************************************/
+/***********************************************************************************************/
+/*** Keyframes *********************************************************************************/
 
 @keyframes navBarAnimation
 {

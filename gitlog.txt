@@ -1,3 +1,57 @@
+commit 2d2544c54d0c90ff01068cb9acd076002169a3ac
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Wed Mar 10 02:13:05 2021 +1100
+
+    Update graphic on about.html
+
+commit 767f27db2fa8af14863743b7f46f5ce3d2389bc1
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Wed Mar 10 00:20:27 2021 +1100
+
+    Update links in index.html to match all other pages
+
+commit 64aaa7308afaa991a8a65d78f1a0a9b8be5b6c3a
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Wed Mar 10 00:00:05 2021 +1100
+
+    Add About Me page about.html
+
+commit b021806492ea850fd5df2cf7d7cc21adb4286390
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Tue Mar 9 23:58:38 2021 +1100
+
+    Update .gitignore to ignore unnecessary files
+
+commit 614ee7b9367424623ed8c87680bc81aaf5636bef
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Tue Mar 9 19:51:16 2021 +1100
+
+    Create 3D rotate effect for box buttons on homepage
+
+commit f363d544d347a019c2e96d242b8b64d5b5bfa4d2
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 9 15:26:14 2021 +1100
+
+    Fix CSS resizing issue in contact page
+
+commit 2cb00f0a2a80d41151de3ac7a3d0ae77f506f527
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 9 14:51:54 2021 +1100
+
+    Add Contact Me page
+
+commit e647d1e84b3ec727734e006306bb5c3d288de30f
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 9 10:43:50 2021 +1100
+
+    Fix navigation bar issue where menu items don't display
+
+commit 4c58aae5f7c1a09313239dd1672320989bbb165b
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Tue Mar 9 10:42:48 2021 +1100
+
+    Add .gitignore file
+
 commit 7bf02d602f6e568fad66824cbc969ce1aae72dcd
 Author: PunitDh <cas012115@coderacademy.edu.au>
 Date:   Mon Mar 8 16:34:38 2021 +1100

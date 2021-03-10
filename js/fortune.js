@@ -20,4 +20,4 @@ function httpGet(theUrl)
 }
 
 
-document.getElementById("fortune").innerHTML = httpGet("http://fortuneapi.herokuapp.com/");
+document.getElementById("fortune").innerHTML = httpGet("https://fortuneapi.herokuapp.com/");

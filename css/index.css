@@ -208,6 +208,8 @@ footer a:hover
 {
     text-indent: 3em;
     text-align: left;
+    line-height: 2em;
+    text-align: justify;
 }
 
 .section-summary::first-letter

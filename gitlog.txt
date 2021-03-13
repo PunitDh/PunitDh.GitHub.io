@@ -1,3 +1,33 @@
+commit 53e4ee3463d6b782e7bf7681692da2df5e68fc5a
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Fri Mar 12 16:15:52 2021 +1100
+
+    Implement subresource integrity for all files
+
+commit 656a5362c2e93bb592c9327f5c63808c15d4849e
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Thu Mar 11 08:13:46 2021 +1100
+
+    Remove fortune.js
+
+commit c92339bf2a74d830f4300cf812b8912a724b2302
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 10 12:21:48 2021 +1100
+
+    Attempt to implement fortune #3
+
+commit 821f275a67e25d0375be6c7f9861db7d61e50b5c
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 10 12:14:15 2021 +1100
+
+    Attempt to implement fortune #2
+
+commit c5af808953f6329e4378d895a4fca2817de3d1a7
+Author: PunitDh <cas012115@coderacademy.edu.au>
+Date:   Wed Mar 10 12:08:30 2021 +1100
+
+    Fix CSS image issue for index, portfolio and about pages
+
 commit 2d2544c54d0c90ff01068cb9acd076002169a3ac
 Author: root <root@Punit-BeastPC.localdomain>
 Date:   Wed Mar 10 02:13:05 2021 +1100

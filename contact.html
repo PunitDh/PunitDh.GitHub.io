@@ -9,13 +9,22 @@
 
     <title>Punit's Contact Page</title>
     
-    <link rel="stylesheet" href="css/index.css" integrity="sha512-DpoDjo6TLBSzo0aKDj6RnUD4+VekXBw5oONVYa+fgu06/fmE9de1R0Y3xzorzKtw38p5xkvpLwYLONSabeL7Tw==" />
-    <link rel="stylesheet" href="css/contact.css" integrity="RuJv41019YPnjte2GfsfojGg4+aQ0Y68ahwlO1AYe7Zt2tJ2B1SgR7x/S9k1CTpYFXkjNed582ujq2f+2bUlaw==" />
+    <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- The stylesheet unique to this page -->
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- <link rel="stylesheet" href="css/index.css" integrity="sha512-nOfVgzf/wY/Cr68VPqLL8dazVonqDciTTKoddbJl0merIq+bl5bPV+VJK1hvyvIEU7MzbHoG01DiBSO/UR7Q9w==" /> -->
+
+    <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
-        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" crossorigin="anonymous" />
-    <script src="js/nav.js" integrity="sha512-YY+ZXbN/4jgTC5fEX5c3q722E0qor38pC6QpOInAybJoO3P+4+EWY8gUMz3EI0k8Cen4WjXYEYxQmZdfZz5HCA=="></script>
+
+    <!--Importing fonts from Google Font servers-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+
+    <!--A script used for the navigation bar-->
+    <script src="js/nav.js" crossorigin="anonymous" /></script>
 </head>
 
 <body>
@@ -62,29 +71,32 @@
         </a>
     </header>
 
+
     <main id="page-content">
         <section id="contact" class="section-content">
             <H2 class="section-heading">Contact Me.</H2>
 
+            <!-- The form currently does a mailto: to my personal e-mail address. Eventually I'd like to build a form that users can send a message directly
+            without opening their e-mail client. -->
             <form class="contact-form-container" action="mailto:punit04@gmail.com" method="post" enctype="text/plain">
                 <P>
                     <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..." />
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..." required />
                 </P>
 
                 <P>
                     <label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." />
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required />
                 </P>
 
                 <P>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" />
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
                 </P>
 
                 <P>
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject..." />
+                    <input type="text" id="subject" name="subject" placeholder="Subject..." required />
                 </P>
 
                 <P>
@@ -92,16 +104,21 @@
                     <textarea id="msg" name="msg" placeholder="Write something..."></textarea>
                 </P>
 
-                <P>
+                <P> <!-- The 'required' attribute in each input field is to denote a required field -->
                     <input type="submit" value="Submit" />
                 </P>
             </form>
             <DIV>Let's get in touch! Links below:</DIV>
-            <a class="logo-image" target="_blank" rel="noreferrer noopener"
+
+            <a class="logo-link" target="_blank" rel="noreferrer noopener"
                 href="https://www.linkedin.com/in/punitdharmadhikari/">
-                <img class="logo-link" src="docs/In-Blue-Logo.png.original.png" alt="Link to LinkedIn" /></a>
+                <img class="logo-image" src="docs/In-Blue-Logo.png.original.png" alt="Link to LinkedIn" /></a>
+
             <a class="logo-link" target="_blank" rel="noreferrer noopener" href="https://github.com/PunitDh/">
                 <img class="logo-image" src="docs/GitHub-Mark-64px.png" alt="Link to GitHub" /></a>
+
+            <a class="logo-link" target="_blank" rel="noreferrer noopener" href="https://codepen.io/punitdh">
+                <img class="logo-image" src="docs/Button-Fill-Black-Small.png" alt="Link to CodePen" /></a>
         </section>
 
     </main>

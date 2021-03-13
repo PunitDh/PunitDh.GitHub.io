@@ -9,19 +9,18 @@
     <title>Punit’s Page</title>
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
-    <link rel="stylesheet" href="css/index.css"
-        integrity="sha512-DpoDjo6TLBSzo0aKDj6RnUD4+VekXBw5oONVYa+fgu06/fmE9de1R0Y3xzorzKtw38p5xkvpLwYLONSabeL7Tw==" />
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- <link rel="stylesheet" href="css/index.css" integrity="sha512-nOfVgzf/wY/Cr68VPqLL8dazVonqDciTTKoddbJl0merIq+bl5bPV+VJK1hvyvIEU7MzbHoG01DiBSO/UR7Q9w==" /> -->
 
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
-        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" integrity="sha512-YY+ZXbN/4jgTC5fEX5c3q722E0qor38pC6QpOInAybJoO3P+4+EWY8gUMz3EI0k8Cen4WjXYEYxQmZdfZz5HCA=="></script>
+    <script src="js/nav.js" crossorigin="anonymous" /></script>
 </head>
 
 <body>
@@ -30,6 +29,7 @@
 
         <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
 
+        <!--I used a JavaScript-implemented Nav-burger menu to display the navigation bar when the window size is small-->
         <a class="nav-button" href="javascript:showNav();">
             <div></div>
             <div></div>
@@ -57,13 +57,13 @@
         <!--📄-->
     </nav>
 
+    <!--I tried to make the page as interactive and as responsive as possible. The banner below is a hyperlink that leads to the <main> page content-->
     <header class="front-banner">
         <H2 class="taglines">Programmer.&nbsp;&nbsp;
             Web Developer.&nbsp;&nbsp;
             Game Developer.&nbsp;&nbsp;
             Public Speaker.&nbsp;&nbsp;
             Life Coach.</H2>
-
         <a href="#page-content" class="taglines">
             <P>
                 <img id="bitmoji-pic" src="docs/bitmoji-punit-transp-backgr.png" alt="A Bitmoji Pic" />
@@ -72,23 +72,16 @@
         </a>
     </header>
 
+    <!-- All pages have the <main> tag to indicate the main content of the page. The <main> is divided into <section> tags -->
     <main id="page-content">
+
+        <!-- This contains "box button links" to my portfolio -->
         <section id="portfolio" class="section-content">
             <H2 class="section-heading">Portfolio.</H2>
-            <!-- <div class="box-container">
-            <a href="/portfolio.html" class="box">Started programming at the age of 12, I have over 20 years experience in
-                HTML, JavaScript, CSS. Click here to check out my web development projects.<span class="overlay">Web Development</span></a>
-            <a href="/portfolio.html" class="box">Growing up I used to love gaming and RPG games were my favourite.
-                Inspired by famous games like Zelda, I started creating my own Action RPG. Click here to check out my
-                gaming projects<span class="overlay">Game Development</span></a>
-            <a href="/scripts.html" class="box">A collection of my scripts that can be used in almost any language
-                Click here to check out my projects.<span class="overlay">Scripts</span></a>
-            <a href="/coach.html" class="box">I got my Diploma in Life Coaching in 2019 and I am also a trained public
-                speaker. <span class="overlay">Public Speaker & Life Coach</span></a>
-            </div> -->
-
+            <!-- The box container lays out the rules as to how the "box buttons" inside the container will be displayed: i.e. via Flexbox -->
             <div class="box-container">
 
+                <!-- Each box button is enveloped in an <a> tag. For CSS implementation, I used nested <div><div> tags for the overlay and descriptions-->
                 <a href="/portfolio.html#web-design-portfolio">
                     <div class="box-button">
                         <div class="box-button-inner">
@@ -121,7 +114,7 @@
                     </div>
                 </a>
 
-                <a href="/coach.html">
+                <a href="/portfolio.html#life-coaching">
                     <div class="box-button">
                         <div class="box-button-inner">
                             <div class="overlay">Public Speaker & Life Coach</div>
@@ -132,12 +125,10 @@
                     </div>
                 </a>
             </div>
-
-            <div class="button-see-more">
-                <a href="/portfolio.html">... See All</a>
-            </div>
+            <a class="button-see-more" href="/portfolio.html">... See All</a>
         </section>
 
+        <!-- I used the <p> tag inside the <section> tag and each p::first letter is capitalised and in a bigger sized font. I used this design because it appeared stylish. -->
         <section id="about-me" class="section-content">
             <H2 class="section-heading">About Me.</H2>
             <P>Hi, I'm Punit. I self-taught myself JavaScript and CSS at the age of 12. Fast
@@ -148,16 +139,16 @@
                 I have a degree in electrical engineering and have worked in other fields as well, such as retail
                 management. I am also a Life Coach practitioner.
             </P>
-            <div class="button-see-more">
-                <a href="/about.html">... See All</a>
-            </div>
+            <a class="button-see-more" href="/about.html">... See All</a>
         </section>
 
+        <!-- The blog post below shows only the first paragraph of the first blog post. Eventually I want to make it so that blog posts are retrieved from the server
+            automatically and displayed below. -->
         <section id="blog" class="section-content">
             <H2 class="section-heading">Blog.</H2>
             <H3>Blog Post 1 :: Lorem Ipsum</H3>
-
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Nisl vel pretium lectus quam id leo in. Ornare arcu odio ut sem nulla
                 pharetra diam sit amet. Eu ultrices vitae auctor eu augue ut. Et ligula ullamcorper malesuada proin
                 libero. Pharetra sit amet aliquam id diam maecenas. Id nibh tortor id aliquet lectus proin nibh.
@@ -165,13 +156,16 @@
                 varius duis at. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. At lectus
                 urna duis convallis convallis tellus id.
             </P>
+
+            <!--The <aside> tag denotes the date in most cases on all my pages-->
             <aside class="blog-post-date">Posted 6 Mar 2021</aside>
-            <div class="button-see-more">
-                <a href="/blog.html">... See More</a>
-            </div>
+            <a class="button-see-more" href="/blog.html">... See More</a>
         </section>
     </main>
 
+    <!-- Every page has a footer that leads to the homepage and also to the top of the page.
+        This is in case the user is a on a mobile device and the page is very long and the user
+        quickly wants to jump to the top of the page/site -->
     <footer>
         <P> <a href="http://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
@@ -181,7 +175,6 @@
         <P>
             <A href="/index.html">Home</A> | <A href="#top">^ Back to Top</A>
         </P>
-
     </footer>
 
 

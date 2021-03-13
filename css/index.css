@@ -1,3 +1,17 @@
+/*
+ * Filename:    Index.CSS (http://punitdh.github.io/css/index.css)
+ * Author:      Punit Dharmadhikari
+ * Github:      https://github.com/PunitDh
+ * Description: This is a stylesheet used for styling the website found at 
+ *              http://punitdh.github.io/
+ *              I used separate sections to denote different elements of
+ *              the page. For example, the COLOUR SCHEME for the page is at
+ *              the top to allow for easy modification.
+ *              The stylesheet is then divided into sections to denote IDs,
+ *              classes, media breakpoints and keyframe animations.
+ */
+
+
 /***********************************************************************************************/
 /*** All ***************************************************************************************/
 *
@@ -13,18 +27,31 @@
 /***********************************************************************************************/
 /*** Colour Scheme *****************************************************************************/
 
-.front-banner, .front-banner-portfolio, .overlay
+/* I made a separate section for the colour scheme of the document because I played around
+    with the colour scheme for quite some time before deciding on the right colour. */
+.front-banner, .overlay
 {
     background-color: #3390FF;
 }
 
 .nav-links a:hover,
-.button-see-more a:hover,
+.button-see-more:hover,
 footer a:hover
 {
     color: #3390FF;
 }
 
+body,    /* An off-white colour for the background */
+.sticky-bar
+{
+    background-color: rgb(235, 235, 235);
+}
+
+.box-button, .overlay,
+.box-button-description /* A white font colour for box buttons */
+{
+    color: white;
+}
 
 /***********************************************************************************************/
 /*** HTML Tags *********************************************************************************/
@@ -36,15 +63,14 @@ html
 
 body
 {
-    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif;     */
     font-size: 12pt;
     position: relative;
-    background-color:rgb(235, 235, 235);
     display: block;
 }
 
 a > button
-{   cursor: pointer; }
+{   cursor: pointer;    }
 
 footer
 {
@@ -63,12 +89,6 @@ footer p
     margin-bottom: 1em;
     font-family: 'Noto Serif JP', serif;
 }
-
-/* H4
-{
-    color: red;
-    font-size: 0.8em; 
-} */
 
 nav
 {
@@ -94,10 +114,80 @@ section
     text-align: center;
 }
 
-/*textarea 	{ color: blue;	resize: none; }*/
-
 /***********************************************************************************************/
 /*** Classes ***********************************************************************************/
+
+
+
+/* The animation effects for the "box-buttons" on index.html were borrowed from https://www.w3schools.com/howto/howto_css_flip_card.asp
+    I really enjoyed the idea of 3D effects in CSS and decided to use it to show off my portfolio design.  */
+.box-container
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.box-button, .overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    overflow-y: hidden;
+}
+
+.box-button
+{
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 1em;
+    border: 0.5em solid black;
+}
+
+.box-button-inner
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    overflow-x: visible;
+}
+
+.box-button:hover .box-button-inner
+{
+    transform: rotateY(180deg);
+}
+
+.box-button-description, .overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    
+}
+
+.box-button-description
+{
+    background-color: rgb(0, 0, 82);
+    transform: rotateY(180deg);
+    display: flex;
+    vertical-align: bottom;
+    align-items: center;
+    font-size: 0.8em;
+    overflow-y: hidden;
+}
 
 .blog-post-date
 {
@@ -108,6 +198,7 @@ section
 .button-see-more
 {
     text-align: right;
+    display: block;
 }
 
 .front-banner, .front-banner-portfolio
@@ -115,24 +206,12 @@ section
     top: 8vh;
     height: 85%;
     text-align: center;
-    overflow-y: initial;
+    /* overflow-y: initial; */
     overflow-x: hidden;
 }
 
 @media screen and (max-width: 374px)
-{ .front-banner, .front-banner-portfolio  { font-size: 80%;}  }
-
-.logo-image
-{
-    text-align: center;
-}
-
-.logo-link
-{
-    margin-top: 2em;
-    width: 4em;
-    height: 4em;
-}
+{ .front-banner { font-size: 80%;}  }
 
 .nav-button
 {
@@ -180,7 +259,7 @@ section
 }
 
 .nav-links a:hover,
-.button-see-more a:hover,
+.button-see-more:hover,
 footer a:hover
 {
     transition: color 0.3s;
@@ -210,6 +289,7 @@ footer a:hover
     text-align: left;
     line-height: 2em;
     text-align: justify;
+    overflow-y: hidden;
 }
 
 .section-summary::first-letter
@@ -217,15 +297,6 @@ footer a:hover
     font-size: 2.5em;
     font-style: italic;   
 }
-
-/* .section-content:nth-of-type(1) {  text-align: center; }
-.section-content:nth-of-type(2) {  text-align: right;  }
-.section-content:nth-of-type(3) {  text-align: center; }
-.section-content:nth-of-type(4) {  text-align: left;   }
-.section-content:nth-of-type(5) {  text-align: center; }
-.section-content:nth-of-type(6) {  text-align: right;  }
-.section-content:nth-of-type(7) {  text-align: center; }
-.section-content:nth-of-type(8) {  text-align: left;   } */
 
 .section-heading
 {
@@ -235,17 +306,12 @@ footer a:hover
     font-size: 4em;
 }
 
-.sticky-bar
-{
-    background-color: rgb(235, 235, 235);
-}
-
 .skillscore	{ width: 30%; }
 
 .taglines
 {
     color:               whitesmoke;
-    font-family:        'Lobster', cursive;
+    font-family:        'Lobster', cursive, sans-serif;
     position:           relative;
     font-weight:        bold;
     font-size:          1.8em;
@@ -259,6 +325,7 @@ a.taglines:hover {  text-decoration: underline;  }
 /***********************************************************************************************/
 /*** Unique IDs ********************************************************************************/
 
+/* The logo at the top of the page is unique to each page and therefore I made it in to an ID */
 #logo
 {
     font-family: 'Noto Sans JP', sans-serif;
@@ -271,7 +338,11 @@ a.taglines:hover {  text-decoration: underline;  }
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: left;
+}
 
+@media screen and (max-width: 560px)
+{   
+    .sticky-bar { justify-content: initial; }
 }
 
 #contact-links
@@ -282,204 +353,12 @@ a.taglines:hover {  text-decoration: underline;  }
 #bitmoji-pic {  width: 90%;  }
 
 @media screen and (min-width: 425px)
-{   #bitmoji-pic { width: 300px; }   }
-
-.box-container
-{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+{   
+    #bitmoji-pic { width: 300px; }   
 }
 
-.box-button, .overlay
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-    overflow-y: hidden;
-}
-
-.box-button
-{
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
-    perspective: 1000px;
-    margin: 1em;
-    border: 0.5em solid black;
-}
-
-.box-button-inner
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.4s;
-    transform-style: preserve-3d;
-    overflow-x: visible;
-}
-
-.box-button:hover .box-button-inner
-{
-    transform: rotateY(180deg);
-}
-
-.overlay, .box-button-description
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1em;
-    
-}
-
-.box-button-description
-{
-    background-color: rgb(0, 0, 82);
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    vertical-align: bottom;
-    align-items: center;
-    font-size: 0.8em;
-    overflow-y: hidden;
-}
-
-
-/* 
-#portfolio .box-button
-{
-    border: 0.5em solid black;
-    background-color: #3390FF;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-    margin: 1em;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 0.8em;    
-    overflow: hidden;
-}
-
-#portfolio .box-button-inner
-{
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-    overflow: hidden;
-}
-
-#portfolio .box-button, .overlay
-{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.5em solid black;
-    background-color: #3390FF;
-    color: white;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-    margin:1em;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 0.8em;
-    vertical-align: bottom;
-}
-
-#portfolio .box-button-description
-{
-    color: white;
-    margin: 0.4em;
-}
-
-#portfolio .box-button:hover
-{
-    cursor: pointer;
-    text-decoration: none;
-    background-color:rgb(0, 0, 82);
-    transition: 0.75s;
-    color: white;
-}
-
-#portfolio .overlay
-{
-    font-size: 1.2em;
-    position: absolute;
-    transition: 0.3s;
-}
-
-#portfolio .overlay:hover
-{
-    transform: scaleX(1.1);
-    opacity: 0;
-}
- */
-
-
-
-/* #portfolio .box-button {
-    background-color: #3390FF;
-    width: 200px;
-    height: 200px;
-    perspective: 1000px;
-    margin: 1em;
-    border: 0.5em solid black;
-    color: white;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-    margin:1em;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 0.8em;
-    overflow: hidden;
-  }
-  
-  #portfolio .box-button-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 #3390FF;
-  }
-  
-  #portfolio .box-button:hover .box-button-inner {
-    transform: rotateY(180deg);
-  }
-  
-  #portfolio .overlay, .box-button-description {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  #portfolio .overlay {
-    background-color: #3390FF;
-    color: white;
-  }
-  
-  #portfolio .box-button-description {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  } */
-
-#skscore { color: brown; }
-
+/* The following elements are only for use on a future project */
 #skillscore { font-family: 'Noto Sans JP', sans-serif; text-align: center; }
-
-#skillscore-label { color: red; }
 
 @media screen and (max-width: 600px)
 { #skillscore-label { color: blue; } }
@@ -530,7 +409,6 @@ a.taglines:hover {  text-decoration: underline;  }
     .nav-links li:hover
     {
         background-color: #4570fd;
-        /* transition: all 0.5s ease-out; */
     }
 
     .nav-links a:hover
@@ -567,7 +445,7 @@ a.taglines:hover {  text-decoration: underline;  }
         z-index: 9999;
         position: fixed;
         align-items: center;
-        justify-content: center;
+        justify-content: inherit;
     }
 }
 
@@ -584,11 +462,10 @@ a.taglines:hover {  text-decoration: underline;  }
 
     #logo
     {  
-        font-size: 0.8em;
+        font-size: 1em;
         word-spacing: 0em;
         display: inline;
         letter-spacing: 2px;
-        margin-left: initial;
     }
 
     #portfolio

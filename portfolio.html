@@ -8,27 +8,32 @@
     <meta name="referrer" content="default" />
 
     <title>Punit's Portfolio</title>
-    <link rel="stylesheet" href="css/index.css" integrity="sha512-DpoDjo6TLBSzo0aKDj6RnUD4+VekXBw5oONVYa+fgu06/fmE9de1R0Y3xzorzKtw38p5xkvpLwYLONSabeL7Tw==" />
-    <link rel="stylesheet" href="css/portfolio.css" integrity="h2zyeBbpmqlhKxb1/WIAibUTVRQhMUQRr4kxEmS8IxVdIsauTh3xlHHTmp9qtf7caYqSFFmOKvjlbLwkiFwdaQ==" />
+
+    <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- The stylesheet unique to this page -->
+    <link rel="stylesheet" href="css/portfolio.css" />
+    
+    <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
-        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" crossorigin="anonymous" />
-    <script src="js/nav.js" integrity="sha512-YY+ZXbN/4jgTC5fEX5c3q722E0qor38pC6QpOInAybJoO3P+4+EWY8gUMz3EI0k8Cen4WjXYEYxQmZdfZz5HCA=="></script>
+
+    <!--Importing fonts from Google Font servers-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+
+    <!--A script used for the navigation bar-->
+    <script src="js/nav.js" crossorigin="anonymous" /></script>
 </head>
 
 <body>
     <!---I used to <nav>, <header>, <main> and <footer> tags to denote different parts of the document <body>. Every <main> tag is separated into <section>. -->
     <nav class="sticky-bar">
-
         <H1 id="logo">Punit&CloseCurlyQuote;s Page</H1>
-
         <a class="nav-button" href="javascript:showNav();">
             <div></div>
             <div></div>
             <div></div>
         </a>
-
 
         <!--The nav links below change properties based on the size of the window. -->
         <ul class="nav-links">
@@ -51,10 +56,9 @@
         <!--📄-->
     </nav>
 
+    <!-- My favourite part about this page is the colour multiply effect. -->
     <header class="front-banner-portfolio">
-
         <H2 class="taglines">Check out my portfolio</H2>
-
         <a href="#page-content" class="taglines">
             <P>
                 <img id="bitmoji-pic" src="docs/bitmoji-punit-computer-transp-backgr.png" alt="A Bitmoji Pic" />
@@ -78,8 +82,11 @@
                 Aldus PageMaker including versions of Lorem Ipsum.</P>
         </section>
 
+
         <section id="game-design-portfolio" class="section-content">
             <H2 class="section-heading">Game Design Portfolio</H2>
+            
+            <!-- Eventually, I'd like the images below to become a slideshow using CSS and JavaScript -->
             <details id="slideshow" class="section-details">
                 <summary class="section-summary">Growing up, I was inspired by games like The Legend of Zelda.</summary>
                 <div class="mover">
@@ -95,10 +102,9 @@
             <details class="section-details">
                 <summary> I wrote a collection of short scripts I wrote that show off my programming skills</summary>
                 <ol class="ordered-list">
-                <!-- <ol id="test"> -->
-                    <li>Want to find out what your coding skills are worth? <a href="skillscore.html">Click here</a>.
+                    <li>Coming soon...</a>.
                     </li>
-                    <li>Want to find out what your coding skills are worth? <a href="skillscore.html">Click here</a>.
+                    <li>Coming soon...</a>.
                     </li>
                 </ol>
             </details>

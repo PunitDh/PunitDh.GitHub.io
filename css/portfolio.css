@@ -1,11 +1,23 @@
+/*
+ * Filename:    Portfolio.CSS (http://punitdh.github.io/css/portfolio.css)
+ * Author:      Punit Dharmadhikari
+ * Github:      https://github.com/PunitDh
+ * Description: This is a stylesheet used for styling the portfolio.html page of the 
+ *              website found at http://punitdh.github.io/
+ *              The stylesheet styles elements that are unique to the portfolio.html
+ *              page.
+ */
+
 .front-banner-portfolio
 {
     background-color: rgb(39, 40, 61);
     background-image: url('/docs/computer-programming-bg.png');
     background-size: 800px 400px;
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
+    font-size: 80%;
 }
 
+/* Eventually with the use of JavaScript, all elements on the page with the id #slideshow will become a moving slideshow */
 #slideshow
 {
     max-width: 4096px;
@@ -16,4 +28,9 @@
     display: block;
     overflow: auto;
     width: 100%;
+}
+
+#slideshow .mover > img
+{
+    width: 80%;
 }

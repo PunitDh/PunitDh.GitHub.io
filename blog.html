@@ -9,12 +9,17 @@
     
     <title>Punit's Blog</title>
     
-    <link rel="stylesheet" href="css/index.css" integrity="sha512-DpoDjo6TLBSzo0aKDj6RnUD4+VekXBw5oONVYa+fgu06/fmE9de1R0Y3xzorzKtw38p5xkvpLwYLONSabeL7Tw==" />
+    <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
-        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" crossorigin="anonymous" />
-    <script src="js/nav.js" integrity="sha512-YY+ZXbN/4jgTC5fEX5c3q722E0qor38pC6QpOInAybJoO3P+4+EWY8gUMz3EI0k8Cen4WjXYEYxQmZdfZz5HCA=="></script>
+
+    <!--Importing fonts from Google Font servers-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+
+    <!--A script used for the navigation bar-->
+    <script src="js/nav.js" crossorigin="anonymous" /></script>
 </head>
 
 <body>
@@ -51,10 +56,9 @@
         <!--📄-->
     </nav>
 
+    <!-- I used a different graphical banner on every page -->
     <header class="front-banner">
-
         <H2 class="taglines">Dear Diary...</H2>
-
         <a href="#page-content" class="taglines">
             <P><img id="bitmoji-pic" src="/docs/bitmoji-punit-blog-transp-bg.png" alt="A Bitmoji Pic" /></P>
             ﹀ See below ﹀

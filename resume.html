@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="http://punitdh.github.io/" />
+    <meta name="referrer" content="default" />
 
     <title>Punit's Resume</title>
-    
+
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css">
-
-    <!-- <link rel="stylesheet" href="css/index.css" integrity="sha512-nOfVgzf/wY/Cr68VPqLL8dazVonqDciTTKoddbJl0merIq+bl5bPV+VJK1hvyvIEU7MzbHoG01DiBSO/UR7Q9w==" /> -->
 
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" crossorigin="anonymous" /></script>
+    <script src="js/nav.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -64,15 +64,17 @@
                 <!--To prevent errors-->
             </H2>
 
-            
+
             <!-- I am aware that a lot of web browsers (especially mobile browsers) are not able to display <iframe> contents
                 correctly, especially when it come to PDF files. Therefore, I have added a button above that allows the user
                 to download my resume file directly. -->
-            <a href="/docs/Punit_Dharmadhikari_CV.pdf" download="Punit_Dharmadhikari_CV.pdf">
-                <button> Download Resume </button>
-            </a>
+            <div class="link-button">
+                <a href="/docs/Punit_Dharmadhikari_CV.pdf" download="Punit_Dharmadhikari_CV.pdf">
+                    Download Resume
+                </a>
+            </div>
             <BR /><BR />
-            
+
             <iframe class="pdf-viewer" src="/docs/Punit_Dharmadhikari_CV.pdf">
             </iframe>
         </section>

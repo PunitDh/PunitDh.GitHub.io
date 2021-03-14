@@ -8,23 +8,23 @@
     <meta name="referrer" content="default" />
 
     <title>Punit's Contact Page</title>
-    
+
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css">
 
     <!-- The stylesheet unique to this page -->
     <link rel="stylesheet" href="css/contact.css" />
 
-    <!-- <link rel="stylesheet" href="css/index.css" integrity="sha512-nOfVgzf/wY/Cr68VPqLL8dazVonqDciTTKoddbJl0merIq+bl5bPV+VJK1hvyvIEU7MzbHoG01DiBSO/UR7Q9w==" /> -->
-
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" crossorigin="anonymous" /></script>
+    <script src="js/nav.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -104,7 +104,8 @@
                     <textarea id="msg" name="msg" placeholder="Write something..."></textarea>
                 </P>
 
-                <P> <!-- The 'required' attribute in each input field is to denote a required field -->
+                <P>
+                    <!-- The 'required' attribute in each input field is to denote a required field -->
                     <input type="submit" value="Submit" />
                 </P>
             </form>

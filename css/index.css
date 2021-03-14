@@ -63,10 +63,9 @@ html
 
 body
 {
-    /* font-family: 'Noto Sans JP', sans-serif;     */
     font-size: 12pt;
     position: relative;
-    display: block;
+    /* display: block; */
 }
 
 a > button
@@ -90,6 +89,21 @@ footer p
     font-family: 'Noto Serif JP', serif;
 }
 
+/* Horizontal Rule */
+.section-separator
+{
+    width: 60%;
+}
+
+/* Horizontal Rule section-separator-subsection */
+.section-separator-subsection
+{
+    width: 25%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+/* Navigation Bar */
 nav
 {
     display: flex;
@@ -99,10 +113,20 @@ nav
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-ol
+/* All lists */
+ol, ul
 {
-    list-style: inside;
-    list-style-type: upper-roman;
+    width: 80%;
+    text-align: left;
+    line-height: 2em;
+    list-style: outside;
+    text-align: justify;
+}
+
+li
+{
+    width: 90%;
+    overflow-x: initial;
 }
 
 section
@@ -171,7 +195,6 @@ section
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1em;
@@ -189,30 +212,62 @@ section
     overflow-y: hidden;
 }
 
+/* The date shown on each blog post */
 .blog-post-date
 {
     text-align: right;
     font-style: italic;
 }
 
+/* The "See More" button */
 .button-see-more
 {
     text-align: right;
     display: block;
 }
 
+/* An <a> tag shaped like a button */
+.link-button
+{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #d0d0d0;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.link-button > a
+{
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.link-button:hover  > a, .link-button:focus  > a, .link-button:active > a
+{
+    background-color: #2098D1;
+    color: white;
+}
+
+/* The large banner on top of every page */
 .front-banner, .front-banner-portfolio
 {
     top: 8vh;
     height: 85%;
     text-align: center;
-    /* overflow-y: initial; */
     overflow-x: hidden;
 }
 
 @media screen and (max-width: 374px)
 { .front-banner { font-size: 80%;}  }
 
+/* The individual button on the nav bar */
 .nav-button
 {
     display: none;
@@ -229,6 +284,7 @@ section
     transition: all 0.5s ease-out;
 }
 
+/* The following effect creates a "rotation" effect of the navigation bar, turning it into an X */
 .nav-button div:nth-child(2)         {  transition: all 0.5s ease-out; transition-delay: 0.5s;  }
 .nav-button-active div:nth-child(1)  {  transform: rotate(+45deg) translate(5px, 5px);          }
 .nav-button-active div:nth-child(2)  {  opacity:0%; transform: rotate(180deg);                  }
@@ -266,17 +322,20 @@ footer a:hover
     text-decoration: underline;
 }
 
+/* The <iframe> containing a PDF document */
 .pdf-viewer
 {
     width: 100%;
     height: 2400px;
 }
 
+/* The actual content within a section */
 .section-content
 {
     font-family: 'Noto Serif JP', serif;
 }
 
+/* A stylish indentation of the first letter */
 .section-content > p::first-letter
 {
     font-size: 2.5em;
@@ -290,6 +349,12 @@ footer a:hover
     line-height: 2em;
     text-align: justify;
     overflow-y: hidden;
+}
+
+.section-subheading
+{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 .section-summary::first-letter
@@ -322,6 +387,18 @@ footer a:hover
 
 a.taglines:hover {  text-decoration: underline;  }
 
+.work-experience > li:nth-child(1), .work-experience > li:nth-child(2)
+{
+    text-indent: -1.2em;
+    list-style: none;
+    font-weight: bold;
+}
+
+.work-experience > li:nth-last-child(1)
+{
+    padding-bottom: 2em;
+}
+
 /***********************************************************************************************/
 /*** Unique IDs ********************************************************************************/
 
@@ -340,10 +417,6 @@ a.taglines:hover {  text-decoration: underline;  }
     text-align: left;
 }
 
-@media screen and (max-width: 560px)
-{   
-    .sticky-bar { justify-content: initial; }
-}
 
 #contact-links
 {
@@ -357,11 +430,38 @@ a.taglines:hover {  text-decoration: underline;  }
     #bitmoji-pic { width: 300px; }   
 }
 
-/* The following elements are only for use on a future project */
+/* The following style is only for use on a future project */
 #skillscore { font-family: 'Noto Sans JP', sans-serif; text-align: center; }
 
-@media screen and (max-width: 600px)
-{ #skillscore-label { color: blue; } }
+/* The skill tags on my About Me page */
+#skilltags-container
+{
+    text-align: right;
+}
+
+#skilltags-container > tfoot
+{
+    margin-top: 2em;
+    text-align: right;
+    font-size: 0.7em;
+}
+
+#skilltags-container tr meter::-webkit-meter-optimum-value
+{
+    width: 100px;
+    height: 25px;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(90deg, #3390FF 5%, #3390FF 100%);
+    background-size: 100% 100%;
+}
+
+#skilltags-container  tfoot  tr  td+td
+{
+    max-width: 100px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
 
 /***********************************************************************************************/
 /*** Media Breakpoints for different screen sizes **********************************************/
@@ -369,7 +469,6 @@ a.taglines:hover {  text-decoration: underline;  }
 @media screen and (max-width: 800px)
 {
     body {  overflow-x: hidden;  }
-    
 
     .nav-links a,
     .nav-links a:active
@@ -447,7 +546,17 @@ a.taglines:hover {  text-decoration: underline;  }
         align-items: center;
         justify-content: inherit;
     }
+
+    ol, ul, li {  width: 90%;  }
 }
+
+@media screen and (max-width: 560px)
+{   
+    .sticky-bar { justify-content: initial; }
+    ol, ul, li  {  font-size: 0.95em; list-style: inside; text-align: justify;  }
+    .work-experience > li:nth-child(1), .work-experience > li:nth-child(2) { text-indent: 0em; }
+}
+
 
 @media screen and (max-width:340px)
 { 

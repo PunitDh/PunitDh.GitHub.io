@@ -8,6 +8,7 @@
     <meta name="referrer" content="default" />
 
     <title>Punit's About Me</title>
+
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css">
 
@@ -15,10 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" crossorigin="anonymous" /></script>
+    <script src="js/nav.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -68,37 +71,173 @@
     <main id="page-content">
         <section id="about-me" class="section-content">
             <H2 class="section-heading">About Me</H2>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Nisl vel pretium lectus quam id leo in. Ornare arcu odio ut sem nulla
-                pharetra diam sit amet. Eu ultrices vitae auctor eu augue ut. Et ligula ullamcorper malesuada proin
-                libero. Pharetra sit amet aliquam id diam maecenas. Id nibh tortor id aliquet lectus proin nibh.
-                Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Augue eget arcu dictum
-                varius duis at. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. At lectus
-                urna duis convallis convallis tellus id.
+            <P>I was born in Mumbai, India. I moved to Singapore at the age of 12 where I completed High School (IB
+                Diploma) then moved overseas for University. I got my electrical engineering degree from UTS in 2013.
+                Eventually I came to realise that electrical engineering was not my field, and I needed to find
+                something that I felt passionately for and cared deeply about.
+
+            </P>
+            <hr class="section-separator-subsection">
+            <H3 class="section-subheading">Why I Became A Developer</H3>
+            <P>My family bought our first computer when I was 8 years old. I was fascinated
+                by it. I recall spending hours trying to figure out every feature of the computer. Eventually at the
+                age of 12, I got into programming. I started with HTML and CSS, then slowly learned JavaScript. I
+                created my first project: a web-based calculator with graphing capabilities at the age of 13.
+                (Unfortunately, this project is now lost to me).
             </P>
 
-            <P>Arcu non odio euismod lacinia at. Sagittis id consectetur purus ut faucibus pulvinar. Feugiat
-                scelerisque varius morbi enim nunc faucibus. In nibh mauris cursus mattis molestie. Eu tincidunt
-                tortor aliquam nulla facilisi cras fermentum odio eu. Non quam lacus suspendisse faucibus interdum
-                posuere lorem ipsum dolor. Sapien nec sagittis aliquam malesuada bibendum. Et ultrices neque ornare
-                aenean. Ornare massa eget egestas purus viverra accumsan in. Diam quis enim lobortis scelerisque
-                fermentum dui faucibus in ornare. Molestie nunc non blandit massa enim nec dui nunc mattis. Sapien
-                faucibus et molestie ac feugiat sed lectus vestibulum. Volutpat commodo sed egestas egestas
-                fringilla phasellus faucibus. Ultrices dui sapien eget mi.
+            <P>I was also fascinated by video game design. I loved the idea of communicating instructions to the
+                computer that the computer then automates into a process. I loved the idea of automation. </P>
+            <P>
+                I am fascinated by artificial intelligence and machine learning technologies. In my video game design
+                projects, I attempt to create advanced artificial intelligence in characters using finite state machines
+                (FSMs) and behaviour trees.
+                Growing up, I always had a natural inclination for programming languages. I best expressed my creativity
+                by spending hours designing small projects such as a calculator and a Word Processing tool.
+                Creativity is just one of the many reasons I chose to become a Software Developer.
             </P>
         </section>
 
+        <hr class="section-separator">
         <section id="work-study-history" class="section-content">
             <H2 class="section-heading">Work & Study History</H2>
-            <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                Aldus PageMaker including versions of Lorem Ipsum.</P>
+            <H3 class="section-subheading">Skills</H3>
+            <table id="skilltags-container">
+                <tbody>
+                    <tr>
+                        <td><label for="HTMLSkill">HTML</label></td>
+                        <td><meter id="HTMLSkill" min="0" max="100" low="33" high="66" optimum="80" value="97">
+                                97/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="CSSSkill">CSS</label></td>
+                        <td><meter id="CSSSkill" min="0" max="100" low="33" high="66" optimum="80" value="97">
+                                97/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="JavaScriptSkill">JavaScript</label></td>
+                        <td><meter id="JavaScriptSkill" min="0" max="100" low="33" high="66" optimum="80" value="97">
+                                97/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="RubySkill">Ruby</label></td>
+                        <td><meter id="RubySkill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                                80/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="MERNSkill">MERN Stack</label></td>
+                        <td><meter id="MERNSkill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                                80/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="CPPSkill">C++</label></td>
+                        <td><meter id="CPPSkill" min="0" max="100" low="33" high="66" optimum="80" value="85">
+                                85/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="CSkill">C</label></td>
+                        <td><meter id="CSkill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                                80/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="JavaSkill">Java</label></td>
+                        <td><meter id="JavaSkill" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                                80/100</meter></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="RSkill">R</label></td>
+                        <td><meter id="RSkill" min="0" max="100" low="33" high="66" optimum="80" value="75">
+                                75/100</meter>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="GMLSkill">GML*</label></td>
+                        <td><meter id="GMLSkill" min="0" max="100" low="33" high="66" optimum="80" value="85">
+                                85/100</meter></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <TD>*GML = </td>
+                        <td>Game Maker Language </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+            <hr class="section-separator-subsection">
+
+            <H3 class="section-subheading">Work Experience</H3>
+            <ul class="work-experience">
+                <li> Assistant Store Manager, Vintage Cellars</li>
+                <li>Jun 2019 &ndash; current </li>
+                <li>Managerial duties in retail</li>
+                <li>Staff rostering and training</li>
+                <li>Communication with team members</li>
+                <li>Promoting loyalty program membership, communicate promotions and benefits
+                <li>Liaise with suppliers for inventory, point-of-sale and product placement</li>
+                <li>Sales reporting</li>
+            </ul>
+
+            <ul class="work-experience">
+                <li>Sales Assistant, Vintage Cellars Rushcutters Bay</li>
+                <li>Mar 2017 &ndash; May 2019</li>
+                <li>Customer Service</li>
+                <li>Managing the store when manager is away</li>
+                <li>Customer Advice &ndash; product &amp; upsell on wines &amp; other products Customer loyalty program
+                </li>
+                <li>Stock management, inventory management Point-of-sale and product placement</li>
+                <li>Sales reporting</li>
+            </ul>
+
+            <ul class="work-experience">
+                <li>Corporate F&B, Nosh Hospitality</li>
+                <li>Aug 2015 &ndash; Mar 2017</li>
+                <li>Serve food & beverage and supervising at corporate events with up to 2000 attendees</li>
+                <li>Event client liaison to ensure smooth running and positive event feedback</li>
+            </ul>
+
+            <ul class="work-experience">
+                <li>Resident Networker (Reception Desk), Urbanest Quay Street, Sydney</li>
+                <li>Nov 2014 – May 2015</li>
+                <li>Providing support services during check-ins, check-outs, bookings and re-bookings</li>
+                <li>Promoting campaigns on university campuses</li>
+                <li>Assist in the implementation and upkeep of social media and online networking</li>
+                <li>Providing overnight on-call support for incident escalation, safety and emergency management
+                    procedures</li>
+            </ul>
+            <ul class="work-experience">
+                <li>Technical Sales Manager, Call IT Mate, Sydney Aug 2014 – Oct 2014</li>
+                <li>Client development for software company</li>
+                <li>Negotiating the terms of an agreement and creating sales funnel Gathering market and customer
+                    information</li>
+                <li>Maintaining and developing relationships with existing customers in person and via telephone calls
+                    and emails</li>
+                <li>Responding to incoming email and phone enquiries</li>
+            </ul>
+
+            <hr class="section-separator-subsection">
+            
+            <H3 class="section-subheading">Educational Background</H3>
+        </section>
+
+        <section id="contact-me" class="section-content">
+            <H2 class="section-heading">Contact Me</H2>
+            <P>Let's get in touch! I would love to meet you!</P>
+            <div class="link-button">
+                <a href="/contact.html">
+                    Contact Me
+                </a>
+            </div>
         </section>
 
         <section id="resume" class="section-content">

@@ -100,9 +100,12 @@ The website was tested on the following resolutions:
 - Surface Duo (540 x 720)
 - Samsung Watch (340 x 270)
 
-The following resources were used in the building of the portfolio website:
+The following resources were used as inspiration and as help in the building of the portfolio website:
 - MDN Web Docs (https://developer.mozilla.org/en-US/)
 - W3 Schools (https://www.w3schools.com/)
 - CSS Navigation Bar Tutorial (https://www.w3schools.com/Css/css_navbar.asp)
 - How To - Flip Card (https://www.w3schools.com/howto/howto_css_flip_card.asp) 
 - Collection of CSS3 powered hover effects (https://ianlunn.github.io/Hover/)
+- Harry Frankel's website used as inspiration for my own (https://harryfrankel.netlify.app/)
+
+I'd like to give many thanks to CoderAcademy instructors Harry Frankel and Michael Bamford for the help and support they provided to me throughout this immensely enjoyable process.

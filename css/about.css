@@ -1,0 +1,134 @@
+/*
+ * Filename:    About.CSS (http://punitdh.github.io/css/about.css)
+ * Author:      Punit Dharmadhikari
+ * Github:      https://github.com/PunitDh
+ * Description: This is a stylesheet used for styling the about.html page of the 
+ *              website found at http://punitdh.github.io/
+ *              The stylesheet styles elements that are unique to the about.html
+ *              page, such as the unordered lists and skill score indicator.
+ */
+
+/***********************************************************************************************/
+/*** Classes ***********************************************************************************/
+
+.educational-timeline
+{
+	text-indent: 1em;
+	list-style-type: none;
+}
+  
+.educational-timeline li
+{
+	position: relative;
+	margin: 0;
+	padding-bottom: 1em;
+	padding-left: 20px;
+}
+  
+.educational-timeline li:before
+{
+	content: '';
+	background-color: #3390FF;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 6px;
+	width: 3px;
+}
+  
+.educational-timeline li:after
+{
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%233390FF' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+	position: absolute;
+	left: 0;
+	height: 15px;
+	width: 15px;
+}
+
+.list-container
+{
+	width: 80%;
+	display: inline-flex;
+	justify-content: center; 
+	align-items: center; 
+}
+
+.work-experience, .work-experience li {  width: 80%;  }
+  
+.work-experience > li:nth-child(1), .work-experience > li:nth-child(2)
+{
+    text-indent: -1.2em;
+    list-style: none;
+    font-weight: bold;
+}
+
+.work-experience > li:nth-last-child(1)
+{
+    padding-bottom: 2em;
+}
+
+/***********************************************************************************************/
+/*** Unique IDs ********************************************************************************/
+
+#contact-me p, #resume p
+{  
+	text-align: center;
+	margin-bottom: 2em;
+	text-indent: 0px;
+}
+
+/* The skill tags on my About Me page */
+#skilltags-container
+{
+    text-align: right;
+}
+
+#skilltags-container > tfoot
+{
+    margin-top: 2em;
+    text-align: right;
+    font-size: 0.7em;
+}
+
+#skilltags-container tr meter::-webkit-meter-optimum-value
+{
+    width: 100px;
+    height: 25px;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(90deg, #3390FF 5%, #3390FF 100%);
+    background-size: 100% 100%;
+}
+
+#skilltags-container  tfoot  tr  td+td
+{
+    max-width: 100px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/***********************************************************************************************/
+/*** Media Breakpoints for different screen sizes **********************************************/
+
+
+@media screen and (max-width: 560px)
+{
+	.educational-timeline
+	{
+		text-indent: 0em;
+		list-style-type: disc;
+		list-style: inside;
+	}
+
+	.educational-timeline li:before
+	{
+		position: relative;		
+	}
+	.educational-timeline li:after
+	{  
+		background-image: none;
+		position: relative;
+	}
+    .work-experience, .work-experience li  {  font-size: 0.95em; list-style: inside; text-align: justify;  }
+    .work-experience > li:nth-child(1), .work-experience > li:nth-child(2) { text-indent: 0em; }
+}

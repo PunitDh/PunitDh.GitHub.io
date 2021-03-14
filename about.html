@@ -10,21 +10,28 @@
     <title>Punit's About Me</title>
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" href="css/index.css"
+        integrity="sha512-O5A8rCn/fJd9+Qa7jizJTuy8h2+ORDkEUt9ciKYXRKv1niYjBNYdVYwIUFi/hXbZz27niVWMfZrApdtf7oyhLA=="
+        crossorigin="anonymous" />
 
     <!--This stylesheet contains ordered and unordered list elements that appear on this page.-->
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about.css"
+        integrity="sha512-ul7E75XfJpu7xaYfQ6yDSu/nzmVir837eeYrenJWp1BUEVzlMYnNvFlRgEmCT8VJyRtwEvHsmt990jg9b/crTA=="
+        crossorigin="anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
+        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" crossorigin="anonymous">
-    </script>
+    <script src="js/nav.js"
+        integrity="sha512-vQaBGPy0JbLkdgvnldbEg0p0JbMtC1kegEEWq39yX4kyjIzbYhSMiZv2/YzMBz6jfQgu8ITaQgeA4pP1IyKTTA=="
+        crossorigin="anonymous">
+        </script>
 </head>
 
 <body>
@@ -51,7 +58,7 @@
             <li><a href="/blog.html" onclick="showNav();">
                     Blog
                 </a></li>
-            <li><a href="/index.html#about-me" onclick="showNav();">
+            <li><a href="/about.html" onclick="showNav();">
                     About
                 </a></li>
             <li><a href="/contact.html" onclick="showNav();">
@@ -180,7 +187,7 @@
             <hr class="section-separator-subsection" />
 
             <H3 class="section-subheading">Work Experience</H3>
-            
+
             <ul class="work-experience">
                 <li> Assistant Store Manager, Vintage Cellars</li>
                 <li>Jun 2019 &ndash; current </li>
@@ -257,7 +264,7 @@
                 </a>
             </div>
 
-            <BR/><BR/>
+            <BR /><BR />
             <a class="logo-link" target="_blank" rel="noreferrer noopener"
                 href="https://www.linkedin.com/in/punitdharmadhikari/">
                 <img class="logo-image" src="docs/In-Blue-Logo.png.original.png" alt="Link to LinkedIn" /></a>
@@ -286,10 +293,10 @@
             </a></P>
         <P>Copyright &copy; 2021</P>
         <P>
-            <A href="/index.html">Home</A> | <A href="#top">^ Back to Top</A>
+            <A href="/index.html">Home</A> | <A id="back-to-top" href="#top">^ Back to Top</A>
         </P>
-
     </footer>
+
 </BODY>
 
 </html>

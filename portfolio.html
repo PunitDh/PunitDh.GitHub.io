@@ -10,21 +10,26 @@
     <title>Punit's Portfolio</title>
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" href="css/index.css"
+        integrity="sha512-O5A8rCn/fJd9+Qa7jizJTuy8h2+ORDkEUt9ciKYXRKv1niYjBNYdVYwIUFi/hXbZz27niVWMfZrApdtf7oyhLA=="
+        crossorigin="anonymous" />
 
     <!-- The stylesheet unique to this page -->
-    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/portfolio.css" integrity="sha512-speHzrZBFQVpOZVDAVJORYSSvWOr75wvUATAW33Mgfp0aXRJuOGCVxNTHifHBL4wUy0YOZzyh8Tw0ZsAwr5zYg==" crossorigin="anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!--Importing fonts from Google Font servers-->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
+        integrity="sha384-sEMMX0mKuWJFhfBHeCIg5YzszldNuLZx5C9vTmDtlHCrwVKWMy64gElOkVNA4O0J" crossorigin="anonymous" />
 
     <!--A script used for the navigation bar-->
-    <script src="js/nav.js" crossorigin="anonymous">
-    </script>
+    <script src="js/nav.js"
+        integrity="sha512-vQaBGPy0JbLkdgvnldbEg0p0JbMtC1kegEEWq39yX4kyjIzbYhSMiZv2/YzMBz6jfQgu8ITaQgeA4pP1IyKTTA=="
+        crossorigin="anonymous">
+        </script>
 </head>
 
 <body>
@@ -147,17 +152,16 @@
     </main>
 
     <footer>
-        <P> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <P> <a href="http://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                     alt="Valid CSS!" />
             </a></P>
         <P>Copyright &copy; 2021</P>
         <P>
-            <A href="/index.html">Home</A> | <A href="#top">^ Back to Top</A>
-        </P>
-        <P><a href="https://www.freepik.com/vectors/digital">Digital vector created by freepik - www.freepik.com</a>
+            <A href="/index.html">Home</A> | <A id="back-to-top" href="#top">^ Back to Top</A>
         </P>
     </footer>
+
 </BODY>
 
 </html>

@@ -118,7 +118,6 @@ ol, ul
 {
     width: 80%;
     text-align: left;
-    line-height: 2em;
     list-style: outside;
     text-align: justify;
 }
@@ -420,6 +419,22 @@ a.taglines:hover {  text-decoration: underline;  }
 /***********************************************************************************************/
 /*** Unique IDs ********************************************************************************/
 
+/* The back-to-top button floats */
+#back-to-top
+{
+    position: relative;
+    transition: 1s;
+}
+
+#bitmoji-pic {  width: 90%;  }
+@media screen and (min-width: 425px)
+{   #bitmoji-pic { width: 300px; }   }
+
+#contact-links
+{
+    text-align: center;
+}
+
 /* The logo at the top of the page is unique to each page and therefore I made it in to an ID */
 #logo
 {
@@ -433,19 +448,6 @@ a.taglines:hover {  text-decoration: underline;  }
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: left;
-}
-
-
-#contact-links
-{
-    text-align: center;
-}
-
-#bitmoji-pic {  width: 90%;  }
-
-@media screen and (min-width: 425px)
-{   
-    #bitmoji-pic { width: 300px; }   
 }
 
 /* The following style is only for use on a future project */
@@ -490,7 +492,7 @@ a.taglines:hover {  text-decoration: underline;  }
         color:#f8f8f8;
         height:20%;
         transition: transform 0.5s ease-out;
-        overflow-y: hidden;
+        overflow-y: visible;
         font-size: 2em;
     }
 
@@ -534,6 +536,19 @@ a.taglines:hover {  text-decoration: underline;  }
         position: fixed;
         align-items: center;
         justify-content: inherit;
+    }
+
+    #back-to-top
+    {
+        position: fixed;
+        padding: 7px;
+        border: 2px solid black;
+        font-size: 0.6em;
+        background-color: #2098D1;
+        color: white;
+        content: 'Top';
+        bottom: 2em;
+        right: 2em;
     }
 }
 

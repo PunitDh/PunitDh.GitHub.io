@@ -40,19 +40,24 @@ Please see screenshots of the project below.
 
 | Index  | Description  |  Image |
 |--------|--------------|--------|
-| 1      | A shot of the box buttons in live action | ![Screenshot of Project](docs/project-screenshots-box-buttons-min.png)                          |
-| 2      | A screenshot of the contact.css CSS file | ![Screenshot of Project](docs/project-screenshots-contact-css-min.png)                          |
-| 3      | A screenshot of the Contact Me page with the form visible | ![Screenshot of Project](docs/project-screenshots-contact-page-min.png)        |
-| 4      | A screenshot of the .gitignore file | ![Screenshot of Project](docs/project-screenshots-gitignore-min.png)                                 |
-| 5      | A screenshoft of the git log in the terminal | ![Screenshot of Project](docs/project-screenshots-gitlog-terminal-min.png)                  |
-| 6      | A screenshot of the git log file gitlog.txt | ![Screenshot of Project](docs/project-screenshots-gitlog-txt-min.png)                        |
-| 7      | A screenshot of the homepage index.html | ![Screenshot of Project](docs/project-screenshots-homepage-min.png)                              |
-| 8      | A screenshot of the index.html HTML code | ![Screenshot of Project](docs/project-screenshots-index-html-min.png)                           |
-| 9      | A screenshot of the showNav() function in nav.js | ![Screenshot of Project](docs/project-screenshots-nav-js-min.png)                       |
-| 10     | A screenshot of the navigation bar in a responsive design | ![Screenshot of Project](docs/project-screenshots-navbar-inspectmode-min.png)  |
-| 11     | A screenshot of the navigation bar | ![Screenshot of Project](docs/project-screenshots-navbar-min.png)                                     |
-| 12     | A screenshot of the Project checklist | ![Screenshot of Project](docs/project-screenshots-onenote-checklist-min.png)                       |
-| 13     | A screenshot of the terminal in use | ![Screenshot of Project](docs/project-screenshots-terminal-min.png)                                  |
+| 1      | A shot of the box buttons in live action | ![Screenshot of Project](docs/project-screenshots-box-buttons-min.png)
+| 2      | The contact.css CSS file | ![Screenshot of Project](docs/project-screenshots-contact-css-min.png)
+| 3      | The Contact Me page with the form visible | ![Screenshot of Project](docs/project-screenshots-contact-page-min.png)
+| 4      | Tutorial on how to create a flip card | ![Screenshot of Project](docs/project-screenshots-flip-card-min.png)
+| 5      | The .gitignore file | ![Screenshot of Project](docs/project-screenshots-gitignore-min.png)
+| 6      | The git log in the terminal | ![Screenshot of Project](docs/project-screenshots-gitlog-terminal-min.png)
+| 7      | The git log file gitlog.txt | ![Screenshot of Project](docs/project-screenshots-gitlog-txt-min.png)
+| 8      | Harry Frankel's website, which was used as an inspiration | ![Screenshot of Project](docs/project-screenshots-harry-website-min.png)
+| 9      | The homepage index.html | ![Screenshot of Project](docs/project-screenshots-homepage-min.png)
+| 10      | Ian Lunn's Hover CSS Library | ![Screenshot of Project](docs/project-screenshots-hover-css-min.png)
+| 11      | The index.html HTML code | ![Screenshot of Project](docs/project-screenshots-index-html-min.png)
+| 12      | The showNav() function in nav.js | ![Screenshot of Project](docs/project-screenshots-nav-js-min.png)
+| 13      | The navigation bar in a responsive design | ![Screenshot of Project](docs/project-screenshots-navbar-inspectmode-min.png)
+| 14      | The navigation bar | ![Screenshot of Project](docs/project-screenshots-navbar-min.png)
+| 15      | Tutorial on navigation bar | ![Screenshot of Project](docs/project-screenshots-navigation-bar-min.png)
+| 16      | A screenshot of a tutorial on how to create a responsive navigation bar | ![Screenshot of Project](docs/project-screenshots-navigation-bar-tutorial-min.png)
+| 17      | The Project checklist | ![Screenshot of Project](docs/project-screenshots-onenote-checklist-min.png)
+| 18      | The WSL terminal in use | ![Screenshot of Project](docs/project-screenshots-terminal-min.png)
 
 
 
@@ -107,5 +112,14 @@ The following resources were used as inspiration and as help in the building of 
 - How To - Flip Card (https://www.w3schools.com/howto/howto_css_flip_card.asp) 
 - Collection of CSS3 powered hover effects (https://ianlunn.github.io/Hover/)
 - Harry Frankel's website used as inspiration for my own (https://harryfrankel.netlify.app/)
+- Navigation Bar tutorial (https://codesandbox.io/s/responsive-navigation-bar-iunju?from-embed=&file=/src/index.js&resolutionWidth=320&resolutionHeight=675)
 
 I'd like to give many thanks to CoderAcademy instructors Harry Frankel and Michael Bamford for the help and support they provided to me throughout this immensely enjoyable process.
+
+**Note:** All screenshots that are linked to online material have are displayed above
+
+### References
+- Reference list Frankel, H. (n.d.). Harry Frankel. [online] harryfrankel.netlify.app. Available at: https://harryfrankel.netlify.app/ [Accessed 14 Mar. 2021].
+- Lunn, I. (n.d.). Hover.css - A collection of CSS3 powered hover effects. [online] Hover.css. Available at: https://ianlunn.github.io/Hover/ [Accessed 14 Mar. 2021].
+- Sungmin-Kim-0508 (2019). Responsive Navigation Bar. [online] CodeSandbox. Available at: https://codesandbox.io/s/responsive-navigation-bar-iunju?from-embed=&file=/src/index.js&resolutionWidth=320&resolutionHeight=675 [Accessed 14 Mar. 2021].
+- W3schools.com. (2019). CSS Navigation Bar. [online] Available at: https://www.w3schools.com/css/css_navbar.asp.www.w3schools.com. (n.d.). How To Create a Flip Card with CSS. [online] Available at: https://www.w3schools.com/howto/howto_css_flip_card.asp [Accessed 14 Mar. 2021].

@@ -1,3 +1,27 @@
+commit d67a56bbb47abb50bdf96477e831c22d1b1c3e8a
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Sun Mar 14 15:33:53 2021 +1100
+
+    Add subresource integrity to all files
+
+commit 56fc462ccd0c71c903e363e8a12055e34558fe8b
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Sun Mar 14 14:38:55 2021 +1100
+
+    Create separate CSS file for about.html
+
+commit e5a056fb7455bdc82ff82e7a86e95a225d241e18
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Sun Mar 14 13:49:07 2021 +1100
+
+    Update About Me page, update ReadMe.MD file
+
+commit 5b0e1534d9cd8c04e9b327d6598a068030dd84ec
+Author: root <root@Punit-BeastPC.localdomain>
+Date:   Sun Mar 14 08:13:16 2021 +1100
+
+    Fix media breakpoints in CSS for all pages
+
 commit 53e4ee3463d6b782e7bf7681692da2df5e68fc5a
 Author: root <root@Punit-BeastPC.localdomain>
 Date:   Fri Mar 12 16:15:52 2021 +1100

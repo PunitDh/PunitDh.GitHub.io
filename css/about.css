@@ -48,10 +48,10 @@
 
 .list-container
 {
-	width: 80%;
-	display: inline-flex;
+	margin-left: 6em;
+	/* display: inline-flex;
 	justify-content: center; 
-	align-items: center; 
+	align-items: flex-start;  */
 }
 
 .work-experience, .work-experience li {  width: 80%;  }
@@ -112,40 +112,6 @@
 
 /***********************************************************************************************/
 /*** Media Breakpoints for different screen sizes **********************************************/
-
-
-@media screen and (max-width: 560px)
-{
-	.educational-timeline
-	{
-		text-indent: 0em;
-		list-style-type: disc;
-		list-style: inside;
-		line-height: 2em;
-		width: 95%;
-	}
-
-	.educational-timeline li:before
-	{
-		position: relative;
-	}
-	.educational-timeline li:after
-	{  
-		background-image: none;
-		position: relative;
-	}
-	
-    .work-experience, .work-experience li
-	{
-		font-size: 0.95em;
-		list-style: inside;
-		text-align: justify;
-		line-height: 2em;
-		width: 95%;
-	}
-    .work-experience > li:nth-child(1), .work-experience > li:nth-child(2) { text-indent: 0em; }
-}
-
 @media screen and (max-width: 800px)
 {
 	#employer-hire
@@ -154,4 +120,58 @@
   		width: 95%;
 		height: auto;
 	}
+
+	.educational-timeline
+	{
+		
+		margin-left: 0px;
+		padding-left: 10px;
+	}
+
+	.list-container
+	{
+		margin-left: 3em;
+	}
 }
+
+@media screen and (max-width: 560px)
+{
+	.educational-timeline
+	{
+		text-indent: 0em;
+		line-height: 0em;
+	}
+
+	.educational-timeline li
+	{
+		/* padding-left: 0px; */
+		font-size: 0.95em;
+	}
+
+	/* .educational-timeline li:before
+	{
+		position: relative;
+	}
+
+	.educational-timeline li:after
+	{  
+		background-image: none;
+		position: relative;
+	} */
+
+	.list-container
+	{
+		margin-left: 0em;
+	}
+	
+    .work-experience, .work-experience li, .educational-timeline
+	{
+		font-size: 0.95em;
+		/* list-style: inside; */
+		text-align: justify;
+		line-height: 2em;
+		width: 95%;
+	}
+    .work-experience > li:nth-child(1), .work-experience > li:nth-child(2) { text-indent: 0em; }
+}
+

@@ -113,6 +113,11 @@ nav
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+noscript ul li
+{
+    display: none;
+}
+
 /* All lists */
 ol, ul
 {
@@ -460,6 +465,11 @@ a.taglines:hover {  text-decoration: underline;  }
 @media screen and (max-width: 800px)
 {
     body {  overflow-x: hidden;  }
+
+    noscript ul li
+    {
+        display: inline-block;
+    }
 
     .nav-links a,
     .nav-links a:active

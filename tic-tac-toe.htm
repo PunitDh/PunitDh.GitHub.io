@@ -11,7 +11,7 @@
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css"
-        integrity="sha512-Qr8z52suusKLc6EH8FKUvLmYqiIlvPkz2fsLDreHNsUvjN1NaKQUhjfwDtCRFSsm0Pin+P6P13F/ethPDOYjlw=="
+        integrity="sha512-n+BsifmI7pEf9WMkSY5rHJJhCOxnD71bbsMGnak8hOsV4WPFFpAJsjVl7KpQqYLwFcErNNOs2+PeVhsditKDYQ=="
         crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/tictactoe.css" />
@@ -76,8 +76,9 @@
 
     <!--I tried to make the page as interactive and as responsive as possible. The banner below is a hyperlink that leads to the <main> page content-->
     <header id="tic-tac-toe-banner">
-        <H2 class="taglines">Unbeatable Tic-Tac-Toe:<BR/><sub>A tic-tac-toe game made with the minimax algorithm</sub></H2>
-        <a href="#page-content" class="taglines">
+        <H2 class="taglines">Unbeatable Tic-Tac-Toe:<BR /><sub>A tic-tac-toe game made with the minimax algorithm</sub>
+        </H2>
+        <a href="#tictactoe" class="taglines">
             <P>
                 <img id="bitmoji-pic" src="docs/cover.png" alt="A Bitmoji Pic" />
             </P>
@@ -87,12 +88,15 @@
 
     <!-- All pages have the <main> tag to indicate the main content of the page. The <main> is divided into <section> tags -->
     <main id="page-content">
-        
-        <iframe height="600px" width="800px" src="https://replit.com/@PunitDh/TicTacToeRuby?lite=true&outputonly=1" frameborder="0" ></iframe>
+        <BR/><BR/><BR/>
+        <section class="section-content">
+            <P>Click the <span id="inline-button"></span> button below to start the game. If the
+                game is not displaying correctly, <a href="https://replit.com/@PunitDh/TicTacToeRuby" target="_new" class="inline-link">follow this link</a> to see it.</P>
+            <iframe id="tictactoe" class="embedded-iframe" src="https://replit.com/@PunitDh/TicTacToeRuby?lite=true&outputonly=1"
+                frameborder="0"></iframe>
             <!-- allowtransparency="true" allowfullscreen="true" -->
             <!-- sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" -->
-
-
+        </section>
     </main>
 
     <!-- Every page has a footer that leads to the homepage and also to the top of the page.

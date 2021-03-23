@@ -36,6 +36,7 @@
 
 .nav-links a:hover,
 .button-see-more:hover,
+.section-content sub a:hover,
 footer a:hover
 {
     color: #3390FF;
@@ -350,6 +351,7 @@ section
 
 .nav-links a:hover,
 .button-see-more:hover,
+
 footer a:hover
 {
     transition: color 0.3s;

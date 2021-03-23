@@ -21,11 +21,6 @@
 	width: 100%;
 }
 
-.inline-link:hover
-{
-	color: #3390FF;
-}
-
 #inline-button
 {
 	display:inline-flex;

@@ -11,12 +11,12 @@
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css"
-        integrity="sha512-n+BsifmI7pEf9WMkSY5rHJJhCOxnD71bbsMGnak8hOsV4WPFFpAJsjVl7KpQqYLwFcErNNOs2+PeVhsditKDYQ=="
+        integrity="sha512-Jau3OC0JDbNTwvYBkTpyiVYuWyRdvXU99Y5hj8ndOxGBJH9NKL9WyQbl84e4h+cHLCYAAjCODPzL68IDGF0xAw=="
         crossorigin="anonymous" />
 
     <!-- The stylesheet unique to this page -->
     <link rel="stylesheet" href="css/portfolio.css"
-        integrity="sha512-speHzrZBFQVpOZVDAVJORYSSvWOr75wvUATAW33Mgfp0aXRJuOGCVxNTHifHBL4wUy0YOZzyh8Tw0ZsAwr5zYg=="
+        integrity="sha512-ko8Y7/K1MHhgPHoj3Iczg75JKf4qs//+9WKjOEV29AU01Au+T37y1Z58RGb0a9R+IQY26Pg/VJpFqcXWWB7Obg=="
         crossorigin="anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
@@ -24,7 +24,7 @@
 
     <!--Importing fonts from Google Font servers-->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"/>
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
 
     <!--A script used for the navigation bar-->
     <script src="js/nav.js"
@@ -120,10 +120,18 @@
             <details class="section-details">
                 <summary> A collection of my projects</summary>
                 <ol class="ordered-list">
-                    <li><a href="/tic-tac-toe.htm">Unbeatable Tic-Tac-Toe V1.2
-                        <BR/><img src="docs/cover.png"></a>
+                    <li><a href="/tic-tac-toe.htm" class="inline-link">Unbeatable Tic-Tac-Toe V1.2</a><BR /><BR />
+                        <P>A Terminal-based tic-tac-toe game that uses the <a
+                                href="https://en.wikipedia.org/wiki/Minimax" target="_new" class="inline-link">Minimax
+                                Algorithm</a> to predict the best move. Practically unbeatable.</P><BR /><BR /><a
+                            href="/tic-tac-toe.htm"><img src="docs/cover.png"></a>
                     </li>
-                    <li>Coming soon....
+                    <li><a href="https://codepen.io/punitdh/full/xxgxagy" class="inline-link" target="_new">Skill Score
+                            (opens in a new tab)</a><BR /><BR />
+                        <P>A web-based selector for the fictional ACME Corporation that returns your Skills Score
+                            based on your knowledge of different programming skills</P><BR /><BR /><a
+                            href="https://codepen.io/punitdh/full/xxgxagy" target="_new"><img
+                                src="docs/skillscore.png"></a>
                     </li>
                 </ol>
             </details>

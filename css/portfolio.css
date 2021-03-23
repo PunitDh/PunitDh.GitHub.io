@@ -17,6 +17,12 @@
     font-size: 80%;
 }
 
+.ordered-list li
+{
+    padding-top: 2em; 
+    padding-bottom: 2em;
+}
+
 /* Eventually with the use of JavaScript, all elements on the page with the id #slideshow will become a moving slideshow */
 #slideshow
 {

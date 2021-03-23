@@ -37,6 +37,7 @@
 .nav-links a:hover,
 .button-see-more:hover,
 .section-content sub a:hover,
+.inline-link:hover,
 footer a:hover
 {
     color: #3390FF;

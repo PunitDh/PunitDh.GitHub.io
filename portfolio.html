@@ -11,12 +11,12 @@
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
     <link rel="stylesheet" href="css/index.css"
-        integrity="sha512-Jau3OC0JDbNTwvYBkTpyiVYuWyRdvXU99Y5hj8ndOxGBJH9NKL9WyQbl84e4h+cHLCYAAjCODPzL68IDGF0xAw=="
+        integrity="sha512-X31nci9AP4X9bpBb2RFl6A1aOd8uH8Lw/HPsqv4nWjyHdVvXqHcHiMpFzzNmUwAUlaDQLI3NiTuQHeMEeemXgQ=="
         crossorigin="anonymous" />
 
     <!-- The stylesheet unique to this page -->
     <link rel="stylesheet" href="css/portfolio.css"
-        integrity="sha512-ko8Y7/K1MHhgPHoj3Iczg75JKf4qs//+9WKjOEV29AU01Au+T37y1Z58RGb0a9R+IQY26Pg/VJpFqcXWWB7Obg=="
+        integrity="sha512-cY76In9UVlOm066UPzkG8kkbDKTWScAj8zvJu4Fps7PGCNhYw8jhzpcSpJzhZZe/xWqeW9nvqu3IdtyfMiH2Hw=="
         crossorigin="anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
@@ -104,7 +104,7 @@
             <H2 class="section-heading">Game Design Portfolio</H2>
 
             <!-- Eventually, I'd like the images below to become a slideshow using CSS and JavaScript -->
-            <details id="slideshow" class="section-details">
+            <details open id="slideshow" class="section-details">
                 <summary class="section-summary">Growing up, I was inspired by games like The Legend of Zelda.</summary>
                 <div class="mover">
                     <img src="docs/arpg-1-demo-programming.gif" alt="A demo of game design" />
@@ -117,17 +117,17 @@
         <hr class="section-separator" />
         <section id="my-scripts" class="section-content">
             <H2 class="section-heading">My Projects</H2>
-            <details class="section-details">
-                <summary> A collection of my projects</summary>
+            <details open class="section-details">
+                <summary class="section-summary"> A collection of my projects</summary>
                 <ol class="ordered-list">
-                    <li><a href="/tic-tac-toe.htm" class="inline-link">Unbeatable Tic-Tac-Toe V1.2</a><BR /><BR />
+                    <li><a href="/tic-tac-toe.html" class="inline-link">Unbeatable Tic-Tac-Toe V1.2</a><BR /><BR />
                         <P>A Terminal-based tic-tac-toe game that uses the <a
                                 href="https://en.wikipedia.org/wiki/Minimax" target="_new" class="inline-link">Minimax
                                 Algorithm</a> to predict the best move. Practically unbeatable.</P><BR /><BR /><a
-                            href="/tic-tac-toe.htm"><img src="docs/cover.png"></a>
+                            href="/tic-tac-toe.html"><img src="docs/cover.png"></a>
                     </li>
-                    <li><a href="https://codepen.io/punitdh/full/xxgxagy" class="inline-link" target="_new">Skill Score
-                            (opens in a new tab)</a><BR /><BR />
+                    <li><a href="https://codepen.io/punitdh/full/xxgxagy" class="inline-link" target="_new">Skill
+                            Score</a><BR /><BR />
                         <P>A web-based selector for the fictional ACME Corporation that returns your Skills Score
                             based on your knowledge of different programming skills</P><BR /><BR /><a
                             href="https://codepen.io/punitdh/full/xxgxagy" target="_new"><img
@@ -140,7 +140,7 @@
         <hr class="section-separator" />
         <section id="life-coaching" class="section-content">
             <H2 class="section-heading">Life Coaching & Public Speaking</H2>
-            <details class="section-details">
+            <details open class="section-details">
                 <summary class="section-summary">I studied Diploma of Life Coaching in 2019-2020 and am also a trained
                     public speaker.</summary>
                 <P>

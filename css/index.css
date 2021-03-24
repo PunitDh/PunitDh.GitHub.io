@@ -70,6 +70,11 @@ body
     /* display: block; */
 }
 
+a[target="_new"]::after
+{
+    content: url('/docs/new_tab_icon.png') / " (Opens in a new tab)";
+}
+
 a > button
 {   cursor: pointer;    }
 
@@ -230,6 +235,12 @@ section
 {
     text-align: right;
     display: block;
+}
+
+.inline-image
+{
+    width: 1em;
+    height: 1em;
 }
 
 /* An <a> tag shaped like a button */
@@ -397,7 +408,8 @@ footer a:hover
 .section-summary::first-letter
 {
     font-size: 2.5em;
-    font-style: italic;   
+    font-style: italic;
+    cursor: pointer;
 }
 
 .section-heading

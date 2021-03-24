@@ -23,6 +23,11 @@
     padding-bottom: 2em;
 }
 
+.section-summary
+{
+    cursor: pointer;
+}
+
 /* Eventually with the use of JavaScript, all elements on the page with the id #slideshow will become a moving slideshow */
 #slideshow
 {

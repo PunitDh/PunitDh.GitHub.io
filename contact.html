@@ -90,39 +90,54 @@
     <main id="page-content">
         <section id="contact" class="section-content">
             <H2 class="section-heading">Contact Me.</H2>
-            <iframe src="/contactform.html" referrerpolicy="no-referrer" sandbox="allow-forms" width="80%"
-                height="800px">
+            <iframe src="/contactform.html"
+                sandbox="allow-forms allow-top-navigation-by-user-activation allow-top-navigation allow-scripts allow-presentation allow-popups-to-escape-sandbox allow-modals allow-popups allow-orientation-lock allow-pointer-lock allow-same-origin"
+                width="80%" height="800px">
+
             </iframe>
-            <!-- The form currently does a mailto: to my personal e-mail address. Eventually I'd like to build a form that users can send a message directly
-            without opening their e-mail client. -->
+
+            <!-- 
+                    allow-forms                             Allows form submission
+                    allow-modals                            Allows to open modal windows
+                    allow-orientation-lock                  Allows to lock the screen orientation
+                    allow-pointer-lock                      Allows to use the Pointer Lock API
+                    allow-popups                            Allows popups
+                    allow-popups-to-escape-sandbox	        Allows popups to open new windows without inheriting the sandboxing
+                    allow-presentation	                    Allows to start a presentation session
+                    allow-same-origin	                    Allows the iframe content to be treated as being from the same origin
+                    allow-scripts	                        Allows to run scripts
+                    allow-top-navigation	                Allows the iframe content to navigate its top-level browsing context
+                    allow-top-navigation-by-user-activation Allows the iframe content to navigate its top-level browsing context, but only if initiated by user
+                -->
+            <!-- The form uses the https:/formspree.io/ API to send messages directly to my e-mail address. -->
             <!-- <form class="contact-form-container" action="https://formspree.io/f/xvodozby" method="post">
                 <P>
                     <label for="fname">First Name:
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..." required /></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..." required /></label>
                 </P>
 
                 <P>
                     <label for="lname">Last Name:
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required /></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..."
+                            required /></label>
                 </P>
 
                 <P>
                     <label for="email">E-mail:
-                    <input type="email" id="email" name="_replyto" placeholder="your@email.com" required /></label>
+                        <input type="email" id="email" name="_replyto" placeholder="your@email.com" required /></label>
                 </P>
 
                 <P>
                     <label for="subject">Subject:
-                    <input type="text" id="subject" name="subject" placeholder="Subject..." required /></label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject..." required /></label>
                 </P>
 
                 <P>
                     <label for="msg">Message:
-                    <textarea id="msg" name="message" placeholder="Write something..."></textarea></label>
+                        <textarea id="msg" name="message" placeholder="Write something..."></textarea></label>
                 </P>
 
                 <P>
-                   
                     <button type="submit">Submit</button>
                 </P>
             </form> -->

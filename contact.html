@@ -16,7 +16,7 @@
 
     <!-- The stylesheet unique to this page -->
     <link rel="stylesheet" href="css/contact.css"
-        integrity="sha512-/iIO3u9jdpaGNgsVtXVOL2nSb7qTHM7vNfOo5WtOzX2Xyy8pVfF6AmkkpXsgld6ai/DhbIzvjfDVLBYTgmfc2g=="
+        integrity="sha512-iHhIVpcGF16lXm2Po2CN79jwQfGXd9RXbbjTw0xWGxbk1k++se1xTBpfo1YZ+TFIwTyn9l+hnd8E2h+UGBAd2A=="
         crossorigin="anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
@@ -90,51 +90,56 @@
     <main id="page-content">
         <section id="contact" class="section-content">
             <H2 class="section-heading">Contact Me.</H2>
-
+            <iframe src="/contactform.html" referrerpolicy="no-referrer" sandbox="allow-forms" width="80%"
+                height="800px">
+            </iframe>
             <!-- The form currently does a mailto: to my personal e-mail address. Eventually I'd like to build a form that users can send a message directly
             without opening their e-mail client. -->
-            <form class="contact-form-container" action="mailto:punit04@gmail.com" method="post" enctype="text/plain">
+            <!-- <form class="contact-form-container" action="https://formspree.io/f/xvodozby" method="post">
                 <P>
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..." required />
+                    <label for="fname">First Name:
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..." required /></label>
                 </P>
 
                 <P>
-                    <label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required />
+                    <label for="lname">Last Name:
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required /></label>
                 </P>
 
                 <P>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                    <label for="email">E-mail:
+                    <input type="email" id="email" name="_replyto" placeholder="your@email.com" required /></label>
                 </P>
 
                 <P>
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject..." required />
+                    <label for="subject">Subject:
+                    <input type="text" id="subject" name="subject" placeholder="Subject..." required /></label>
                 </P>
 
                 <P>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="msg" placeholder="Write something..."></textarea>
+                    <label for="msg">Message:
+                    <textarea id="msg" name="message" placeholder="Write something..."></textarea></label>
                 </P>
 
                 <P>
-                    <!-- The 'required' attribute in each input field is to denote a required field -->
-                    <input type="submit" value="Submit" />
+                   
+                    <button type="submit">Submit</button>
                 </P>
-            </form>
+            </form> -->
             <DIV>Let's get in touch! Links below:</DIV>
 
             <a class="logo-link" target="_blank" rel="noreferrer noopener"
                 href="https://www.linkedin.com/in/punitdharmadhikari/">
-                <img class="logo-image" src="docs/In-Blue-Logo.png.original.png" alt="Link to LinkedIn" title="Link to LinkedIn"/></a>
+                <img class="logo-image" src="docs/In-Blue-Logo.png.original.png" alt="Link to LinkedIn"
+                    title="Link to LinkedIn" /></a>
 
             <a class="logo-link" target="_blank" rel="noreferrer noopener" href="https://github.com/PunitDh/">
-                <img class="logo-image" src="docs/GitHub-Mark-64px.png" alt="Link to GitHub" title="Link to GitHub" /></a>
+                <img class="logo-image" src="docs/GitHub-Mark-64px.png" alt="Link to GitHub"
+                    title="Link to GitHub" /></a>
 
             <a class="logo-link" target="_blank" rel="noreferrer noopener" href="https://codepen.io/punitdh">
-                <img class="logo-image" src="docs/Codepen-Button-Fill-Black-Small.png" alt="Link to CodePen" title="Link to CodePen" /></a>
+                <img class="logo-image" src="docs/Codepen-Button-Fill-Black-Small.png" alt="Link to CodePen"
+                    title="Link to CodePen" /></a>
 
             <a class="logo-link" target="_blank" rel="noreferrer noopener" href="https://replit.com/@PunitDh">
                 <img class="logo-image" src="docs/repl-it-logo.svg" alt="Link to Repl.it" title="Link to Repl.it" /></a>

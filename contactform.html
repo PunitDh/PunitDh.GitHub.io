@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Form</title>
+	<!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
+	<link rel="stylesheet" href="css/index.css"
+		integrity="sha512-X31nci9AP4X9bpBb2RFl6A1aOd8uH8Lw/HPsqv4nWjyHdVvXqHcHiMpFzzNmUwAUlaDQLI3NiTuQHeMEeemXgQ=="
+		crossorigin="anonymous" />
+
+	<!-- The stylesheet unique to this page -->
+	<link rel="stylesheet" href="css/contact.css"
+		integrity="sha512-iHhIVpcGF16lXm2Po2CN79jwQfGXd9RXbbjTw0xWGxbk1k++se1xTBpfo1YZ+TFIwTyn9l+hnd8E2h+UGBAd2A=="
+		crossorigin="anonymous" />
+
+	<!--Informs the browser that the page intends to connect to another origin-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+	<!--Importing fonts from Google Font servers-->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" />
+
+</head>
+
+<body>
+
+	<main id="page-content">
+		<section id="contact" class="section-content">
+			<form class="contact-form-container" action="https://formspree.io/f/xvodozby" method="post">
+				<P>
+					<label for="fname">First Name:
+						<input type="text" id="fname" name="firstname" placeholder="Your name..." required /></label>
+				</P>
+
+				<P>
+					<label for="lname">Last Name:
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..."
+							required /></label>
+				</P>
+
+				<P>
+					<label for="email">E-mail:
+						<input type="email" id="email" name="_replyto" placeholder="your@email.com" required /></label>
+				</P>
+
+				<P>
+					<label for="subject">Subject:
+						<input type="text" id="subject" name="subject" placeholder="Subject..." required /></label>
+				</P>
+
+				<P>
+					<label for="msg">Message:
+						<textarea id="msg" name="message" placeholder="Write something..."></textarea></label>
+				</P>
+
+				<P>
+					<!-- The 'required' attribute in each input field is to denote a required field -->
+					<button type="submit">Submit</button>
+				</P>
+			</form>
+
+		</section>
+
+	</main>
+
+</body>
+
+</html>

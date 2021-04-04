@@ -20,12 +20,12 @@
     background-color: #e0e0e0;
 }
 
-#contact input[type=submit]:hover
+#contact button:hover
 {
     background-color: #6aa8f8;
 }
 
-#contact input[type=submit]
+#contact button
 {
     background-color: #4c77af;
     color: white;
@@ -72,7 +72,7 @@
     resize: vertical;
 }
 
-#contact input[type=submit]
+#contact button
 {
     margin-left: 2em;
     padding: 12px 20px;
@@ -88,10 +88,15 @@
 
 @media screen and (max-width: 420px)
 {
-    #contact input[type=text], input[type=submit], input[type=email], textarea
+    #contact input[type=text], button, input[type=email], textarea
     {
         margin-left: 0.25em;
     }
 
     #contact label { margin-left: 0.25em; }
+}
+
+#page-content iframe
+{
+    border: none;
 }

@@ -29,9 +29,20 @@
 
 /* I made a separate section for the colour scheme of the document because I played around
     with the colour scheme for quite some time before deciding on the right colour. */
-.front-banner, .overlay
+
+:root {
+    --bg-color: #052e61;
+    --typewriterSpeed: 3s;
+    --typewriterChars: 24;
+}
+
+.front-banner
 {
-    background-color: #3390FF;
+    background-color: var(--bg-color);
+}
+
+.overlay {
+    background-color: #63a8fd;
 }
 
 .nav-links a:hover,
@@ -40,7 +51,7 @@
 .inline-link:hover,
 footer a:hover
 {
-    color: #3390FF;
+    color: var(--bg-color);
 }
 
 body,    /* An off-white colour for the background */
@@ -306,9 +317,64 @@ section
 .front-banner, .front-banner-portfolio
 {
     top: 8vh;
-    height: 85%;
+    height: 82vh;
     text-align: center;
     overflow-x: hidden;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.front-banner h1, .front-banner h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    
+    width: max-content;
+}
+
+.front-banner h2 {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease var(--typewriterSpeed) forwards;
+}
+
+.front-banner h1::before, .front-banner h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.front-banner h2 + .taglines {
+    opacity: 0;
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+}
+
+.front-banner h1::before {
+    background: var(--bg-color);
+    animation: typewriter var( --typewriterSpeed) steps(var(--typewriterChars)) forwards;
+}
+
+.front-banner h1::after {
+    width: 0.125em;
+    background-color: #0073ff;
+    animation: typewriter var( --typewriterSpeed) steps(var(--typewriterChars)) forwards, blink 650ms steps(var(--typewriterChars)) infinite;
+}
+
+@keyframes typewriter {
+    to { left: 100%; }
+}
+
+@keyframes blink {
+    to { background: transparent; }
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1;
+        transform: translateY(0); }
 }
 
 @media screen and (max-width: 374px)
@@ -432,6 +498,7 @@ footer a:hover
     padding:            0.5em;
     text-decoration:    none;
     display:            block;
+    /* top:                70%; */
 }
 
 a.taglines:hover {  text-decoration: underline;  }
@@ -635,3 +702,4 @@ a.taglines:hover {  text-decoration: underline;  }
       transform: translateX(0px);
     }
 }
+

@@ -10,9 +10,8 @@
     <title>Punit’s Page</title>
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
-    <link rel="stylesheet" href="css/index.css"
-        integrity="sha512-X31nci9AP4X9bpBb2RFl6A1aOd8uH8Lw/HPsqv4nWjyHdVvXqHcHiMpFzzNmUwAUlaDQLI3NiTuQHeMEeemXgQ==
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css" integrity="sha512-+w2McFr8VM6MqGV0GwcaZrFXDIMMd+BV3xcWyjlOH5EwJYQlth+ME3N36c5mVzOpm4btiOeYhKBhvplBqJrE3g=="
+        crossorigin=" anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -74,22 +73,39 @@
 
     <!--I tried to make the page as interactive and as responsive as possible. The banner below is a hyperlink that leads to the <main> page content-->
     <header class="front-banner">
-        <H2 class="taglines">Programmer.&nbsp;&nbsp;
-            Web Developer.&nbsp;&nbsp;
-            Game Developer.&nbsp;&nbsp;
-            Public Speaker.&nbsp;&nbsp;
-            Life Coach.</H2>
-        <a href="#page-content" class="taglines">
-            <P>
-                <img id="bitmoji-pic" src="docs/bitmoji-punit-transp-backgr.png" alt="A Bitmoji Pic" />
-            </P>
-            ﹀ See my work below ﹀
-        </a>
+        
+        <h1>Hello, my name is Punit.</h1>
+        <h2>Welcome to my website.</h2>
+                <!--<H2 class="taglines">Programmer.&nbsp;&nbsp;
+                    Web Developer.&nbsp;&nbsp;
+                    Game Developer.&nbsp;&nbsp;
+                    Public Speaker.&nbsp;&nbsp;
+                    Life Coach.</H2>-->
+        
+            <a href="#page-content" class="taglines">﹀ See my work below ﹀</a>
+        
     </header>
 
     <!-- All pages have the <main> tag to indicate the main content of the page. The <main> is divided into <section> tags -->
     <main id="page-content">
 
+        <!-- I used the <p> tag inside the <section> tag and each p::first letter is capitalised and in a bigger sized font. I used this design because it appeared stylish. -->
+            <section id="about-me" class="section-content">
+                <H2 class="section-heading">About Me.</H2>
+                <P>Hi, I'm Punit. I self-taught myself JavaScript and CSS at the age of 12. Fast
+                    forward <B>20 years</B> later, and I'm a passionate Sydney-based full-stack web
+                    developer. I have experience in multiple coding languages and can work across a range of platforms.
+                    I am fluent in JavaScript and JavaScript-like languages (such as GML), and also in Ruby, Python, C, C++
+                    and R.
+                    I have a degree in electrical engineering and have worked in other fields as well, such as retail
+                    management. I am also a Life Coach practitioner.
+                </P>
+                <a class="button-see-more" href="/about.html">... See All</a>
+            </section>
+
+        
+
+        <hr class="section-separator" />
         <!-- This contains "box button links" to my portfolio -->
         <section id="portfolio" class="section-content">
             <H2 class="section-heading">Portfolio.</H2>
@@ -142,20 +158,7 @@
             <a class="button-see-more" href="/portfolio.html">... See All</a>
         </section>
 
-        <hr class="section-separator" />
-        <!-- I used the <p> tag inside the <section> tag and each p::first letter is capitalised and in a bigger sized font. I used this design because it appeared stylish. -->
-        <section id="about-me" class="section-content">
-            <H2 class="section-heading">About Me.</H2>
-            <P>Hi, I'm Punit. I self-taught myself JavaScript and CSS at the age of 12. Fast
-                forward <B>20 years</B> later, and I'm a passionate Sydney-based full-stack web
-                developer. I have experience in multiple coding languages and can work across a range of platforms.
-                I am fluent in JavaScript and JavaScript-like languages (such as GML), and also in Ruby, Python, C, C++
-                and R.
-                I have a degree in electrical engineering and have worked in other fields as well, such as retail
-                management. I am also a Life Coach practitioner.
-            </P>
-            <a class="button-see-more" href="/about.html">... See All</a>
-        </section>
+        
 
         <hr class="section-separator" />
         <!-- The blog post below shows only the first paragraph of the first blog post. Eventually I want to make it so that blog posts are retrieved from the server

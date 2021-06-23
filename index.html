@@ -10,7 +10,8 @@
     <title>Punit’s Page</title>
 
     <!--I use a single stylesheet for all the common elements on all my pages. Elements that are unique to the page have their own stylesheets.-->
-    <link rel="stylesheet" href="css/index.css" integrity="sha512-+w2McFr8VM6MqGV0GwcaZrFXDIMMd+BV3xcWyjlOH5EwJYQlth+ME3N36c5mVzOpm4btiOeYhKBhvplBqJrE3g=="
+    <link rel="stylesheet" href="css/index.css"
+        integrity="sha512-+w2McFr8VM6MqGV0GwcaZrFXDIMMd+BV3xcWyjlOH5EwJYQlth+ME3N36c5mVzOpm4btiOeYhKBhvplBqJrE3g=="
         crossorigin=" anonymous" />
 
     <!--Informs the browser that the page intends to connect to another origin-->
@@ -73,37 +74,37 @@
 
     <!--I tried to make the page as interactive and as responsive as possible. The banner below is a hyperlink that leads to the <main> page content-->
     <header class="front-banner">
-        
+
         <h1>Hello, my name is Punit.</h1>
         <h2>Welcome to my website.</h2>
-                <!--<H2 class="taglines">Programmer.&nbsp;&nbsp;
+        <!--<H2 class="taglines">Programmer.&nbsp;&nbsp;
                     Web Developer.&nbsp;&nbsp;
                     Game Developer.&nbsp;&nbsp;
                     Public Speaker.&nbsp;&nbsp;
                     Life Coach.</H2>-->
-        
-            <a href="#page-content" class="taglines">﹀ See my work below ﹀</a>
-        
+
+        <a href="#page-content" class="taglines">﹀ See my work below ﹀</a>
+
     </header>
 
     <!-- All pages have the <main> tag to indicate the main content of the page. The <main> is divided into <section> tags -->
     <main id="page-content">
 
         <!-- I used the <p> tag inside the <section> tag and each p::first letter is capitalised and in a bigger sized font. I used this design because it appeared stylish. -->
-            <section id="about-me" class="section-content">
-                <H2 class="section-heading">About Me.</H2>
-                <P>Hi, I'm Punit. I self-taught myself JavaScript and CSS at the age of 12. Fast
-                    forward <B>20 years</B> later, and I'm a passionate Sydney-based full-stack web
-                    developer. I have experience in multiple coding languages and can work across a range of platforms.
-                    I am fluent in JavaScript and JavaScript-like languages (such as GML), and also in Ruby, Python, C, C++
-                    and R.
-                    I have a degree in electrical engineering and have worked in other fields as well, such as retail
-                    management. I am also a Life Coach practitioner.
-                </P>
-                <a class="button-see-more" href="/about.html">... See All</a>
-            </section>
+        <section id="about-me" class="section-content">
+            <H2 class="section-heading">About Me.</H2>
+            <P>Hi, I'm Punit. I self-taught myself JavaScript and CSS at the age of 12. Fast
+                forward <B>20 years</B> later, and I'm a passionate Sydney-based full-stack web
+                developer. I have experience in multiple coding languages and can work across a range of platforms.
+                I am fluent in JavaScript and JavaScript-like languages (such as GML), and also in Ruby, Python, C, C++
+                and R.
+                I have a degree in electrical engineering and have worked in other fields as well, such as retail
+                management. I am also a Life Coach practitioner.
+            </P>
+            <a class="button-see-more" href="/about.html">... See All</a>
+        </section>
 
-        
+
 
         <hr class="section-separator" />
         <!-- This contains "box button links" to my portfolio -->
@@ -158,26 +159,26 @@
             <a class="button-see-more" href="/portfolio.html">... See All</a>
         </section>
 
-        
+
 
         <hr class="section-separator" />
         <!-- The blog post below shows only the first paragraph of the first blog post. Eventually I want to make it so that blog posts are retrieved from the server
             automatically and displayed below. -->
         <section id="blog" class="section-content">
             <H2 class="section-heading">Blog.</H2>
-            <H3>Blog Post 1 :: Unbeatable Tic-Tac-Toe Game
+            <H3>How I Made A Tic Tac Toe Game Unbeatable
                 <BR /><sub><a href="tic-tac-toe.html">A Ruby-Based Project - Play it here</a></sub>
             </H3>
             <P>
                 Growing up, I was always fascinated by artificial intelligence. Getting a machine that is made up of
-                lights and switches and 1's and 0's to <em>think and act like a human would</em>.
-                I spent a long time tinkering with and learning about finite state machines (FSMs), behaviour trees and
-                motion planning. Now this may sound like gobbledegook, but it is one of the most interesting aspects of
-                computer usage.
+                lights and switches and 1s and 0's’ to think and act like a human would. I spent a long time tinkering
+                with and learning about finite state machines (FSMs), behaviour trees and motion planning. It’s an area
+                I’m passionate about, would love to explore further and would like to possibly pursue as a career one
+                day.
             </P>
 
             <!--The <aside> tag denotes the date in most cases on all my pages-->
-            <aside class="blog-post-date">Posted 23 Mar 2021</aside>
+            <aside class="blog-post-date">Posted 23 Jun 2021</aside>
             <a class="button-see-more" href="/blog.html">... See More</a>
         </section>
     </main>

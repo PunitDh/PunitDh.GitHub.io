@@ -85,71 +85,152 @@
             <H2 class="section-heading">Blog Post 1 :: Unbeatable Tic-Tac-Toe Game
                 <BR /><sub><a href="tic-tac-toe.html">A Ruby-Based Project - Play it here</a></sub>
             </H2>
-            <aside class="blog-post-date">Posted 23 Mar 2021</aside>
-            <P>
-                Growing up, I was always fascinated by artificial intelligence. Getting a machine that is made up of
-                lights and switches and 1's and 0's to <em>think and act like a human would</em>.
-                I spent a long time tinkering with and learning about finite state machines (FSMs), behaviour trees and
-                motion planning. Now this may sound like gobbledegook, but it is one of the most interesting aspects of
-                development.
-            </P>
+            <aside class="blog-post-date">Posted 23 Jun 2021</aside>
+            <p>Growing up, I was always fascinated by artificial intelligence. Getting a machine that is made up of
+                lights and switches and 1s and 0's’ to think and act like a human would. I spent a long time tinkering
+                with and learning about finite state machines (FSMs), behaviour trees and motion planning. It’s an area
+                I’m passionate about, would love to explore further and would like to possibly pursue as a career one
+                day.</p>
 
-            <P>We started doing a project in class -- a terminal-based TicTacToe game. This was obviously just an intro
-                to Ruby for most of us in class. But I decided to take it one step further. I wanted to build a game
-                where the computer actually responds intelligently. So I started to work on that. First and foremost,
+            <p>As part of my coding bootcamp, we were given the task of building a Ruby terminal based application. I
+                decided to test my skills and knowledge, and challenge myself by building a Tic Tac Toe game, one where
+                the computer responds intelligently. I aimed to make the game as realistic as possible, one where a user
+                would be able to play with minimal instructions, and it would mimic the game in real life. </p>
+
+            <p>How it works: the application starts with a main menu, where the user selects New Game, and are then
+                asked to choose between single and multi-player mode. Multiplayer mode allows two users to play against
+                each other, and the game progresses as normal – the board is displayed, the computer ‘tosses a coin’
+                (generates a random number) to determine who goes first. Players take turns choosing which grid square
+                to play by entering the co-ordinates, and an ‘X’ or ‘O’ is placed there, with the aim to get three in a
+                diagonal, horizontal or vertical row, with the game ending in a win or a draw. But where it gets really
+                interesting, is when the player chooses to play against the computer. The application follows the same
+                process as a two player game, but the other move is made by the computer, and the computer plays to win.
             </p>
+
+            <p>The evolution of my thinking through this application started with first getting the computer to play a
+                random move. I did this by creating a functionality that finds all the empty squares on the board, and
+                choosing one to place the move in. A good start, but I wanted the computer to respond intelligently. To
+                do this, I researched algorithms and game theory and decided on the Minimax algorithm. Often used in
+                chess, this embodies the decision rule for minimising the possible loss for a worst case (maximum loss)
+                scenario. I refactored this to fit a Tic Tac Toe game, so it iterates through all possible moves in
+                milliseconds and performs the best possible one. To showcase this, the number of moves is displayed in
+                the application – when the computer makes its first move of the game, it performs almost sixty thousand
+                iterations. The game is then saved, and can be accessed later. </p>
+
+            <p>In creating this game, I purposely wrote the code so that another developer would be able to learn from
+                it or build upon it. The code is written to be modular, readable, and modifiable, and is well commented
+                throughout in order to promote collaboration with others. </p>
+
+            <p>One of the things I enjoyed most about creating this game was challenging myself above the requirements
+                of the assignment, and pushing myself to learn more about AI and how it can be incorporated into live
+                applications. Creating tests for this was really interesting as well. Rspec testing has of course been
+                utilised, but in order to test as thoroughly as possible, I created a simulation mode where the player
+                can set up Computer vs Computer, in order to check that the AI was indeed unbeatable. This is capped at
+                a thousand games (in order to prevent infinite loops, memory leaks and system crashes) and takes about
+                fourteen minutes to complete. I ultimately decided to make this a part of the final application as a
+                showcase for the durability of the code and the algorithm. </p>
+
+            <p>You can find the code for the game <a href="https://github.com/punitdh/tictactoeruby">here</a>, with a
+                readme doc detailing some of the more technical aspects of how the game was put together.</p>
+
         </section>
 
         <hr class="section-separator" />
 
         <section id="blog-post-2" class="section-content">
-            <H2 class="section-heading">Blog Post 2 :: A fully-functioning code casts app deployed to Heroku</H2>
-            <aside class="blog-post-date">Posted 15 Apr 2021</aside>
-            <P>I love Ruby. I absolutely enjoyed the development process of the TicTacToe application. I loved the idea
-                of recursive functions. I also loved the idea of using the MVC model to organise all the application
-                logic. I recreated the TicTacToe game using MVC. Now I'm currently undertaking a training project in
-                Ruby on Rails. The <a
-                    href="https://www.udemy.com/course/job-ready-web-developer/learn/lecture/2244812#overview"
-                    target="_new">Complete Web Developer Bootcamp Course</a> is a fast-track way of learning Ruby on
-                Rails. I decided to do the full course during the term break of my CoderAcademy classes. </P>
-
-            <P>Enim nunc faucibus a pellentesque sit amet. Sapien nec sagittis aliquam malesuada. Aliquet risus
-                feugiat in ante metus dictum. Elementum tempus egestas sed sed risus pretium quam vulputate
-                dignissim. In pellentesque massa placerat duis. Gravida neque convallis a cras. Mus mauris vitae
-                ultricies leo integer malesuada nunc vel risus. Neque ornare aenean euismod elementum nisi quis
-                eleifend quam adipiscing. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula.
-                Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Enim ut tellus elementum
-                sagittis vitae et leo duis. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Vel pretium
-                lectus quam id leo in.
-            </P>
-
+            <H2 class="section-heading">Taking on Dan Murphys – The Precious Nectar, a two sided marketplace for wine
+                collectors</H2>
+            <aside class="blog-post-date">Posted 15 Jun 2021</aside>
+            <p>Having worked in the wine industry for over four years, I have met a number of people that love rare
+                wines, either for collection or drinking. I also worked with some of the best sales reps and wine
+                connoisseurs in the country. This got me thinking… was there a market for a website that would cater
+                specifically to them, allowing them to both sell and buy wines?</p>
+            <p>We were given the assignment to create a two sided marketplace app, using Ruby on Rails, and I created
+                The Precious Nectar, a site for wine lovers to both purchase and/or sell bottles of wine. The features
+                of the site include a full catalogue, a search bar, a cart and transaction system, full payment
+                integration, My Account functionality, a messaging system and responsive pages. I also worked
+                extensively on the backend database, using PostgreSQL and creating a robust project model with active
+                record associations of the User, Listing, Profile, Transaction, CartListing, Conversations and Message.
+            </p>
+            <p>When I was building this app, I considered the type of customers I’ve had, and what they would want out
+                of a site like this. My work experience with wine has been mostly based in the eastern suburbs of
+                Sydney, with often very famous and wealthy customers, like Tony Abbott and Ricky Ponting. With this type
+                of premium customer in mind, I wanted a premium look for the design and UX, aiming to replicate a
+                boutique shopping experience. To this end, I used the Tailwind CSS Framework, and the Font Awesome gem
+                to improve the look, responsiveness and overall branding of the site. Giving users the opportunity to
+                sell as well as buy was done to increase users engagement with the website, with higher browse and dwell
+                times, with the aim to build customer loyalty. The purpose was to create a sense of community amongst
+                members, and encourage return customers.</p>
+            <p>This app also gave me a chance to further develop my skills in periphery technologies as well. The Devise
+                gem and Pundit gem was used for authentication, and the Stripe gem for payments, and the Stripe Webhook
+                API and Ultrahook. Using these existing frameworks allowed me to concentrate on really making them work
+                within my own code, and see what further functionality could be explored, and also not to simply add
+                gems for the sake of it. I also used Amazing S3 Cloud Storage for image storage, and Heroku for app
+                deployment. </p>
+            <p>This was a great experience in creating an application in something I had a personal interest in (I
+                collect wine myself, so would obviously get first pick of all wines for sale as the site
+                administrator!), and personal experience working with. I love being able to combine knowledge and skills
+                from my previous life, and create a web application that I would use myself as a customer. I feel it
+                gave me a unique insight into how the functionality and design of both the front and back end code would
+                be best designed and deployed to meet the market needs. Creating this app in an assignment context with
+                deadlines and requirements of technologies used gave me valuable real world experience, including in
+                project and time management, creating wireframes, writing user stories and meeting company or client
+                needs. </p>
+            <p>The website can be found <a href="https://the-precious-nectar.herokuapp.com">here</a> and the GitHub
+                repository here <a href="https://www.github.com/punitdh/thepreciousnectar">here</a>.</p>
         </section>
 
         <hr class="section-separator" />
 
         <section id="blog-post-3" class="section-content">
-            <H2 class="section-heading">Blog Post 3 :: Consequat interdum varius sit amet</H2>
-            <aside class="blog-post-date">Posted 6 Mar 2021</aside>
-            <P>Consequat interdum varius sit amet. Pulvinar proin gravida hendrerit lectus. Rutrum quisque non
-                tellus orci ac auctor. Sem fringilla ut morbi tincidunt. Pharetra pharetra massa massa ultricies mi
-                quis hendrerit dolor. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Hac
-                habitasse platea dictumst vestibulum. Pellentesque massa placerat duis ultricies lacus sed. Ipsum
-                nunc aliquet bibendum enim facilisis. Elit scelerisque mauris pellentesque pulvinar pellentesque
-                habitant morbi tristique. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est.
-                Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Blandit aliquam etiam erat velit
-                scelerisque in. Malesuada fames ac turpis egestas. Rutrum tellus pellentesque eu tincidunt tortor
-                aliquam nulla. Porttitor eget dolor morbi non arcu risus. Pellentesque habitant morbi tristique
-                senectus et. Suspendisse in est ante in nibh mauris. Habitasse platea dictumst vestibulum rhoncus.
-                In iaculis nunc sed augue lacus viverra.
+            <H2 class="section-heading">Creating a machine coding app in less than 25 lines of code – live
+            </H2>
+            <aside class="blog-post-date">Posted 6 Jun 2021</aside>
+            <P>We were given the task in class to do a lightening talk, a ten minute or so presentation, on any topic of
+                our choosing. This wasn’t a graded assignment, but rather was an opportunity to practice presentation
+                skills. It was great listening to others – topics that ranged from Lolita fashion (a Japanese fashion
+                subculture) to the different types of algorithms.</p>
+
+            <p>When it was time to do mine, I chose to focus on a couple of interests. I’ve always been interested in
+                AI, particularly machine learning. Growing up, I watched a lot of sci-fi movies (I Robot, Star Wars) and
+                played a lot of sci-fi games (Mass Effect – a game about fighting super-intelligent machines trying to
+                take over the galaxy). I was always curious as to how you could get a machine to think like a human, and
+                for the machine to actually learn from its own behaviours using some sort of data or feedback mechanism.
             </P>
 
-            <P>Arcu felis bibendum ut tristique et egestas quis ipsum. Et magnis dis parturient montes nascetur
-                ridiculus. Aliquet eget sit amet tellus. Nunc sed augue lacus viverra vitae congue. Duis tristique
-                sollicitudin nibh sit amet. Egestas tellus rutrum tellus pellentesque eu. Ante metus dictum at
-                tempor commodo ullamcorper a lacus. Accumsan sit amet nulla facilisi morbi tempus. Sed risus pretium
-                quam vulputate dignissim suspendisse in. Leo a diam sollicitudin tempor id eu nisl. In fermentum
-                posuere urna nec tincidunt praesent semper feugiat. Praesent semper feugiat nibh sed pulvinar proin
-                gravida hendrerit.
+            <p>I decided to use this as an opportunity to create my first machine learning app, one where it recommends
+                movies to a user based on what they’ve watched previously (similar to the Netflix algorithm). To make
+                this work, I learnt Python in less than six hours, though it wasn’t part of the curriculum. I had to
+                consider that traditional programming is about giving the computer ‘rules’ and ‘data’, and the computer
+                coming up with an answer. Machine learning programming is the opposite. It involves giving the computer
+                ‘answers’ and ‘data’ and having the computer come up with it’s on ‘rules’ on what to do with that data.
+            </p>
+
+            <p>The app works on a simple user interface. The user is asked to enter the name of the last movie they
+                watched. They are then recommended ten movies to watch. So typing in Jaws, would give the
+                recommendations of Jaws 2, Jaws: The Revenge, The Reef, The Shallows, Shark Night, Shark Tale, Bait,
+                Batman, Creature and Shark Life. To get these results, I learned to use the machine learning libraries
+                sklearn and pandas. From the sklearn library, I used something called a Tfidfvectorizer, which stands
+                for ‘term frequency–inverse document frequency vectorizer’. It sounds complicated but in simple terms,
+                it just counts the number of words in a document, then arranges those words in order of ‘importance’.
+                Words such as and, the and of are given less importance, and keywords and unique words are given more
+                importance. A similarity table was then used to create a large 5000 x 5000 table in the computers memory
+                that records the scores of how similar one movie is to another based on these keywords. I also used
+                something called linear kernel, which is just a fancy buzzword for a process used to create a similarity
+                table. This allowed the closest possible movie to be picked to the one the user has entered.</p>
+
+            <p>Creating an app like this let me explore the notion of data science further. The use of scientific
+                methods, processes, algorithms and systems to extract knowledge and insights from structured and
+                unstructured data, and apply knowledge and actionable insights from data across a broad range of
+                application domains. A fascinating area, and I one I will exploring further in the future.</p>
+
+            <p>And to just to make things more interesting, I decided to try and write the code live in front of the
+                class, as part of the presentation. This definitely added an extra challenge, and I was definitely happy
+                when it worked! (and in less than 25 lines of code too).</p>
+
+            <p>A demo can be found <a href="https://replit.com/@PunitDh/MovieRecommenderPython?v=1">here</a>. Code is <a
+                    href="https://github.com/PunitDh/MovieRecommenderPython/blob/master/machinelearning.py">here</a>.
+
             </P>
 
         </section>
@@ -157,58 +238,90 @@
         <hr class="section-separator" />
 
         <section id="blog-post-4" class="section-content">
-            <H2 class="section-heading">Blog Post 4 :: Aliquet nibh praesent tristique magna sit amet purus gravida quis
+            <H2 class="section-heading">Going the extra mile, and how a ‘can do’ attitude helps me to become a better
+                programmer
             </H2>
-            <aside class="blog-post-date">Posted 6 Mar 2021</aside>
-            <P>Aliquet nibh praesent tristique magna sit amet purus gravida quis. Commodo elit at imperdiet dui
-                accumsan sit amet nulla facilisi. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.
-                Mollis nunc sed id semper risus in hendrerit gravida. Sed blandit libero volutpat sed cras ornare
-                arcu. A erat nam at lectus urna duis. Adipiscing elit duis tristique sollicitudin nibh sit amet.
-                Faucibus nisl tincidunt eget nullam. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
-                Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Dolor sed viverra ipsum nunc. Laoreet
-                id donec ultrices tincidunt. Maecenas volutpat blandit aliquam etiam erat velit. Suspendisse sed
-                nisi lacus sed viverra tellus in. Felis eget nunc lobortis mattis aliquam. Lorem ipsum dolor sit
-                amet consectetur adipiscing elit. Integer feugiat scelerisque varius morbi enim nunc.
-            </P>
+            <aside class="blog-post-date">Posted 6 Jun 2021</aside>
+            <P>One of the things I enjoy most about programming is creating solutions. I love breaking down a challenge
+                or problem and investigating all the different ways and approaches to solve it. I started off doing an
+                electrical engineering degree, and very much enjoyed the problem solving aspects of it (less so the
+                physics and mathematics of electricity!), and I think this has structured my way of thinking to be
+                methodical, practical and has given me a desire to search out new information, knowledge and skills and
+                how best to utilise these.
 
-            <P>Enim sed faucibus turpis in eu mi bibendum neque egestas. Porttitor rhoncus dolor purus non enim
-                praesent elementum facilisis. Feugiat nibh sed pulvinar proin. Nisi quis eleifend quam adipiscing
-                vitae proin sagittis. Nunc lobortis mattis aliquam faucibus purus. Nisl vel pretium lectus quam id
-                leo. Metus dictum at tempor commodo ullamcorper a. Ac placerat vestibulum lectus mauris ultrices
-                eros in. Pulvinar mattis nunc sed blandit. Diam vulputate ut pharetra sit amet aliquam id diam
-                maecenas. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Venenatis a
-                condimentum vitae sapien pellentesque habitant morbi. Est pellentesque elit ullamcorper dignissim
-                cras tincidunt. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Tincidunt tortor aliquam
-                nulla facilisi cras fermentum.
-            </P>
+                During my period of study, we were given access to much theory and lectures, which I’ve really enjoyed.
+                I first learnt about coding from watching YouTube when I was young, so being able to combine this with
+                more structured theoretical knowledge has been invaluable. Once I’ve got a problem or challenge, I want
+                to do whatever it takes to solve it. This has meant doing extra work and creating many of my own
+                websites (hit me up if you want to see my website that converts hexadecimal to binary and more!) while
+                fulfilling the course requirements. I’ve also signed up for additional online courses (both free and
+                paid), watched many more YouTube tutorials, much reading of documentation, learning from other’s code,
+                refactoring a code that’s used for one purpose and applying it to another, and some wide-ranging use of
+                StackOverflow.
+
+            <p>Some examples of this include:</p>
+            <ul>
+                <li>When I was doing the marketplace app, I couldn’t figure out how to do Stripe payment integration
+                    properly – so I went and paid $25 USD for an online course to teach me how to do that, and got it
+                    working perfectly.</li>
+                <li>When I was doing the Tic Tac Toe AI for another assignment, I went down the rabbit hole of exploring
+                    every algorithm I could find – I finally found the ‘minimax’ algorithm online that was written in
+                    C++ and was meant for Chess. But I copied over all the logic from the Chess algorithm and rewrote
+                    the code in Ruby to fit my Tic Tac Toe game</li>
+                <li>I implemented the ‘Facebook style chat’ system in my marketplace app in less than 24 hours after
+                    being inspired by another classmate’s work. This included the full CSS to make it look like a real
+                    Facebook chat, and I did this through a lot of targeted googling, blog posts, StackOverflow examples
+                    and CSS components. </li>
+            </ul>
+            <p>I’ve also really enjoyed working with other students in the class. Seeing how different people with
+                different professional and study backgrounds approach a problem is fascinating, and it’s great seeing
+                how
+                many different ways of thinking there are and how this can lead to many solutions. Helping someone with
+                some
+                code they are having trouble with has allowed me to learn so much more as well, and I’m really looking
+                forward to being able to continue to work and collaborate with others in a professional environment.</p>
 
         </section>
 
         <hr class="section-separator" />
 
         <section id="blog-post-5" class="section-content">
-            <H2 class="section-heading">Blog Post 5 :: Dui sapien eget mi proin sed libero</H2>
-            <aside class="blog-post-date">Posted 5 Mar 2021</aside>
-            <P>Dui sapien eget mi proin sed libero. Enim tortor at auctor urna nunc id. Faucibus scelerisque
-                eleifend donec pretium vulputate sapien nec sagittis aliquam. Tellus integer feugiat scelerisque
-                varius morbi enim nunc. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Ullamcorper
-                velit sed ullamcorper morbi tincidunt ornare massa eget. Arcu ac tortor dignissim convallis aenean
-                et tortor at. Aenean euismod elementum nisi quis eleifend quam adipiscing. Eget lorem dolor sed
-                viverra ipsum nunc aliquet bibendum enim. Proin sagittis nisl rhoncus mattis rhoncus urna neque
-                viverra. Pretium viverra suspendisse potenti nullam ac tortor vitae.
-            </P>
+            <H2 class="section-heading">What drives me to become a programmer (and why life coaching and programming
+                have more in common than you think)</H2>
+            <aside class="blog-post-date">Posted 5 Jun 2021</aside>
+            <P>One of the things that drives me most about programming is the ability to make something happen on
+                screen. I love that I am creating something that didn’t exist before, watching it evolve with each
+                feature and line of code added. I also like to think of the code itself as it’s own work of art. Each
+                feature named perfectly. Each class it’s own entity. Tests that prepare for any eventuality. Going
+                through the code again and again, making sure it’s as DRY and clean as possible, and it’s readable by
+                other developers. </p>
 
-            <P>Sollicitudin ac orci phasellus egestas tellus. Fringilla phasellus faucibus scelerisque eleifend
-                donec. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Sit amet tellus cras
-                adipiscing enim eu turpis. Gravida cum sociis natoque penatibus. Tristique senectus et netus et
-                malesuada fames. Porta nibh venenatis cras sed felis eget velit aliquet. Nunc sed id semper risus in
-                hendrerit. Aliquam etiam erat velit scelerisque in. In nisl nisi scelerisque eu ultrices. Tempor
-                commodo ullamcorper a lacus vestibulum sed arcu non odio. Non pulvinar neque laoreet suspendisse
-                interdum. Aliquet bibendum enim facilisis gravida neque. Urna nunc id cursus metus aliquam eleifend
-                mi. Odio pellentesque diam volutpat commodo sed egestas. Nunc congue nisi vitae suscipit tellus
-                mauris a diam. Auctor neque vitae tempus quam pellentesque nec. Nunc eget lorem dolor sed viverra
-                ipsum nunc aliquet. Dictum fusce ut placerat orci. Sagittis aliquam malesuada bibendum arcu vitae
-                elementum curabitur vitae nunc.</P>
+            <p>I also really enjoy being able to break a task down into parts. When studying, it was often quite
+                overwhelming when each assignment was released. Each one had multiple requirements that had to be
+                fulfilled, separate to actually creating a functional website. I found it best to work through these
+                methodically, breaking each part into a manageable section so I could start planning and preparing for
+                it. For a couple of the assignments, I actually built a quick and rough website first, just to get used
+                to how the languages worked together. Then I would work through the set of tasks. For me, the harder the
+                task, the more satisfying it is to finish. </p>
+
+            <p>I think in programming, there’s always going to be a new challenge. And just when you think you’ve solved
+                one, another one comes along. It can be difficult to continuously face challenges, but I think the
+                bigger the challenge, the more interesting it is. I find being able to solve to constantly solve
+                problems very rewarding, and have a real hunger to find not only a solution, but the best possible
+                solution. </p>
+
+            <p>Because everyone has to have a side hustle these days (lol), I also have a side business as a life coach
+                practitioner. Life coaching is all about communicating with people in a way that <em>they</em>
+                understand (as
+                opposed to communicating in a way that <em>I</em> understand) – I see programming in a similar way.
+                Programming
+                is about communicating with a computer in a way that the <em>computer</em> understands. I think life
+                coaching has
+                taught me about seeing things from other perspectives, different ways of communicating and
+                comprehending; and that approach can be brought to programming. I think also being able to break a
+                problem, challenge or even just a situation down into manageable parts, and then working through those
+                parts is also a really valuable skill to be able to share with others.
+            </P>
 
         </section>
 
